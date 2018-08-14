@@ -30,6 +30,7 @@ github.com/gobuffalo/packr v1.13.1 h1:1Z7KOEokVtxM7PFvh8ZYD/+h7vwN/hl1DBD4wDKWGv
 github.com/gobuffalo/packr v1.13.1/go.mod h1:m3J/Q/tkaODAQq3r6NyWhDhJs2cVZS/lU0+0Edmfv3c=
 github.com/gobuffalo/plush v0.0.0-20180810170812-274552812256 h1:F0IV6ybT9TYIXHVICqIHKcjCNvJuicTL3WwoE8kNuuI=
 github.com/gobuffalo/plush v0.0.0-20180810170812-274552812256/go.mod h1:vdLIKHIw/7fnuNo9clH7hkIP50T27JgtfrcD2mnqIBM=
+github.com/gobuffalo/pop v0.0.0-20180810203029-9f8bf0c11920 h1:O4TZPudnJq5ic4v/lCMotk8+o/pfsCGNzXMcBaFoWq8=
 github.com/gobuffalo/pop v0.0.0-20180810203029-9f8bf0c11920/go.mod h1:rYdFIDMO4v9I4SK6BQ3q+vnd5HlQnTtlY/ANF7wKzGM=
 github.com/gobuffalo/pop v4.5.11+incompatible h1:Y/+liakm94COHKoq+QC9bGhWai4658/5WRGVOqmHxo8=
 github.com/gobuffalo/pop v4.5.11+incompatible/go.mod h1:DwBz3SD5SsHpTZiTubcsFWcVDpJWGsxjVjMPnkiThWg=
