@@ -13,7 +13,7 @@ This is the home for all things that combine [Buffalo](https://github.com/gobuff
 ## Installation
 
 ```bash
-$ go get -u -v github.com/gobuffalo/buffalo-pop
+$ go get -u -v github.com/gobuffalo/buffalo-pop/...
 ```
 
 ## Transaction Middleware
