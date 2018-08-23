@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/gobuffalo/buffalo"
+	"github.com/gobuffalo/httptest"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/uuid"
-	"github.com/markbates/willie"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 )
@@ -84,7 +84,7 @@ func app(db *pop.Connection) *buffalo.App {
 func Test_PopTransaction(t *testing.T) {
 	r := require.New(t)
 	err := tx(func(db *pop.Connection) {
-		w := willie.New(app(db))
+		w := httptest.New(app(db))
 		res := w.HTML("/success").Get()
 		r.Equal(201, res.Code)
 		count, err := db.Count("widgets")
@@ -97,7 +97,7 @@ func Test_PopTransaction(t *testing.T) {
 func Test_PopTransaction_Error(t *testing.T) {
 	r := require.New(t)
 	err := tx(func(db *pop.Connection) {
-		w := willie.New(app(db))
+		w := httptest.New(app(db))
 		res := w.HTML("/error").Get()
 		r.Equal(500, res.Code)
 		count, err := db.Count("widgets")
@@ -110,7 +110,7 @@ func Test_PopTransaction_Error(t *testing.T) {
 func Test_PopTransaction_NonSuccess(t *testing.T) {
 	r := require.New(t)
 	err := tx(func(db *pop.Connection) {
-		w := willie.New(app(db))
+		w := httptest.New(app(db))
 		res := w.HTML("/non-success").Get()
 		r.Equal(301, res.Code)
 		count, err := db.Count("widgets")
