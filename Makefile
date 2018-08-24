@@ -1,6 +1,19 @@
-test:
-	go test -tags sqlite ./...
+GO_BIN ?= go
 
-ci-test:
-	go get -u -v -t ./...
-	go test -race -v -tags sqlite ./...
+deps:
+	$(GO_BIN) get -v github.com/gobuffalo/packr/packr
+	$(GO_BIN) get -v -t ./...
+
+build: deps
+	packr
+	$(GO_BIN) build -v .
+
+install: deps
+	packr
+	$(GO_BIN) install -v .
+
+test:
+	$(GO_BIN) test -tags ${TAGS} ./...
+
+ci-test: deps
+	$(GO_BIN) test -tags ${TAGS} -race ./...
