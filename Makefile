@@ -1,3 +1,4 @@
+TAGS ?= "sqlite"
 GO_BIN ?= go
 
 deps:
