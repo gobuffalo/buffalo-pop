@@ -2,9 +2,9 @@ module github.com/gobuffalo/buffalo-pop
 
 require (
 	github.com/gobuffalo/buffalo v0.12.6
-	github.com/gobuffalo/buffalo-plugins v0.0.0-20180826122621-73b14cc740b4
+	github.com/gobuffalo/buffalo-plugins v0.0.0-20180826125405-1fbda0e7b05f
 	github.com/gobuffalo/fizz v1.0.10 // indirect
-	github.com/gobuffalo/genny v0.0.0-20180823134419-80135003197d
+	github.com/gobuffalo/genny v0.0.0-20180826140831-cc696d79f3ae
 	github.com/gobuffalo/httptest v1.0.1
 	github.com/gobuffalo/makr v1.1.4 // indirect
 	github.com/gobuffalo/packr v1.13.3
