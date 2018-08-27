@@ -5,6 +5,7 @@ import (
 	"os"
 
 	"github.com/gobuffalo/buffalo-plugins/plugins"
+	"github.com/gobuffalo/buffalo-pop/cmd/destroy"
 	"github.com/spf13/cobra"
 )
 
@@ -16,6 +17,7 @@ var availableCmd = &cobra.Command{
 		plugs := plugins.Commands{
 			{Name: "db", BuffaloCommand: "root", Description: "[DEPRECATED] please use `buffalo pop` instead.", Aliases: popCmd.Aliases},
 			{Name: "pop", BuffaloCommand: "root", Description: popCmd.Short, Aliases: popCmd.Aliases},
+			{Name: "model", BuffaloCommand: "destroy", Description: destroy.ModelCmd.Short, Aliases: destroy.ModelCmd.Aliases},
 		}
 		return json.NewEncoder(os.Stdout).Encode(plugs)
 	},

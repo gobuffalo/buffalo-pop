@@ -2,8 +2,8 @@ TAGS ?= "sqlite"
 GO_BIN ?= go
 
 deps:
-	$(GO_BIN) get -v github.com/gobuffalo/packr/packr
-	$(GO_BIN) get -tags ${TAGS} -v -t ./...
+	$(GO_BIN) get github.com/gobuffalo/packr/packr
+	$(GO_BIN) get -tags ${TAGS} -t ./...
 
 build: deps
 	packr
@@ -18,3 +18,8 @@ test:
 
 ci-test: deps
 	$(GO_BIN) test -tags ${TAGS} -race ./...
+
+update:
+	$(GO_BIN) get -u
+	$(GO_BIN) mod tidy
+	make test

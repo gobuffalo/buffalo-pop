@@ -14,7 +14,7 @@ import (
 
 func New(opts *Options) (*genny.Generator, error) {
 	if opts.Prefix == "" {
-		return nil, errors.New("you must provide a database prefix")
+		return nil, errors.New("you must provide a database name prefix")
 	}
 	if (opts.App == meta.App{}) {
 		opts.App = meta.New(".")
