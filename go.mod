@@ -2,7 +2,7 @@ module github.com/gobuffalo/buffalo-pop
 
 require (
 	github.com/gobuffalo/buffalo v0.12.6
-	github.com/gobuffalo/buffalo-plugins v0.0.0-20180903193353-7daba0b12059
+	github.com/gobuffalo/buffalo-plugins v0.0.0-20180903200018-2bc46821cfb0
 	github.com/gobuffalo/fizz v1.0.10 // indirect
 	github.com/gobuffalo/genny v0.0.0-20180903175302-8e6ecd7c52ca
 	github.com/gobuffalo/httptest v1.0.1
