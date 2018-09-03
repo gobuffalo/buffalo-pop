@@ -2,16 +2,17 @@ module github.com/gobuffalo/buffalo-pop
 
 require (
 	github.com/gobuffalo/buffalo v0.12.6
-	github.com/gobuffalo/buffalo-plugins v0.0.0-20180901204951-27c67fe7f036
+	github.com/gobuffalo/buffalo-plugins v0.0.0-20180903193353-7daba0b12059
 	github.com/gobuffalo/fizz v1.0.10 // indirect
-	github.com/gobuffalo/genny v0.0.0-20180901203237-910b3f615b03
+	github.com/gobuffalo/genny v0.0.0-20180903175302-8e6ecd7c52ca
 	github.com/gobuffalo/httptest v1.0.1
-	github.com/gobuffalo/makr v1.1.4 // indirect
+	github.com/gobuffalo/makr v1.1.5 // indirect
 	github.com/gobuffalo/packr v1.13.3
 	github.com/gobuffalo/plush v3.7.16+incompatible
 	github.com/gobuffalo/pop v4.7.2+incompatible
 	github.com/gobuffalo/uuid v2.0.3+incompatible
 	github.com/gobuffalo/x v0.0.0-20180816203319-dc54d929c4a2 // indirect
+	github.com/gorilla/sessions v1.1.2 // indirect
 	github.com/lib/pq v1.0.0 // indirect
 	github.com/markbates/inflect v1.0.0
 	github.com/markbates/refresh v1.4.3 // indirect
