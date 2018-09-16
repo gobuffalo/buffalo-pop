@@ -6,6 +6,8 @@ import (
 
 	"github.com/gobuffalo/buffalo-plugins/plugins"
 	"github.com/gobuffalo/buffalo-pop/cmd/destroy"
+	"github.com/gobuffalo/pop"
+	"github.com/gobuffalo/pop/logging"
 	"github.com/spf13/cobra"
 )
 
@@ -13,6 +15,12 @@ import (
 var availableCmd = &cobra.Command{
 	Use:   "available",
 	Short: "a list of available buffalo plugins",
+	PreRunE: func(cmd *cobra.Command, args []string) error {
+		// we need to mute the pop logger for this cmd because it pollutes
+		// the output of the command and plugins can't unmarshal the output
+		pop.SetLogger(func(lvl logging.Level, s string, args ...interface{}) {})
+		return nil
+	},
 	RunE: func(cmd *cobra.Command, args []string) error {
 		plugs := plugins.Commands{
 			{Name: "db", BuffaloCommand: "root", Description: "[DEPRECATED] please use `buffalo pop` instead.", Aliases: popCmd.Aliases},
