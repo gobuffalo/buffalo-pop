@@ -6,6 +6,8 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/gobuffalo/buffalo"
+	pp "github.com/gobuffalo/buffalo-pop/pop"
+	"github.com/gobuffalo/events"
 	"github.com/gobuffalo/pop"
 )
 
@@ -16,6 +18,23 @@ import (
 // field to the log, "db", that shows the total duration spent during
 // the request making database calls.
 func Transaction(db *pop.Connection) buffalo.MiddlewareFunc {
+	events.NamedListen("popmw.Transaction", func(e events.Event) {
+		if e.Kind != events.AppStart {
+			return
+		}
+		var app *buffalo.App
+		var ok bool
+		for _, n := range []string{"app", "data"} {
+			app, ok = e.Payload[n].(*buffalo.App)
+			if ok {
+				break
+			}
+		}
+		if app == nil {
+			return
+		}
+		pop.SetLogger(pp.Logger(app))
+	})
 	return func(h buffalo.Handler) buffalo.Handler {
 		return func(c buffalo.Context) error {
 			// wrap all requests in a transaction and set the length

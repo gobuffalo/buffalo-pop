@@ -1,8 +1,10 @@
 module github.com/gobuffalo/buffalo-pop
 
 require (
+	github.com/fatih/color v1.7.0
 	github.com/gobuffalo/buffalo v0.12.6
 	github.com/gobuffalo/buffalo-plugins v0.0.0-20180911185405-ca94b2cb30ad
+	github.com/gobuffalo/events v0.0.0-20180919212028-867dc2348bad
 	github.com/gobuffalo/fizz v1.0.10 // indirect
 	github.com/gobuffalo/genny v0.0.0-20180911185118-5ca23a895a78
 	github.com/gobuffalo/httptest v1.0.1
@@ -25,5 +27,4 @@ require (
 	github.com/sirupsen/logrus v1.0.6
 	github.com/spf13/cobra v0.0.3
 	github.com/stretchr/testify v1.2.2
-	golang.org/x/net v0.0.0-20180911220305-26e67e76b6c3 // indirect
 )
