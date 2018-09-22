@@ -1,5 +1,6 @@
 dmitri.shuralyov.com/text/kebabcase v0.0.0-20180217051803-40e40b42552a/go.mod h1:3YpR/7A6nvWHA/oFH66Hp/dJ5A2gM63I3xkA/3FV6tY=
 github.com/BurntSushi/toml v0.3.0/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
+github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/Masterminds/semver v1.4.2/go.mod h1:MB6lktGJrhw8PrUyiEoblNEGEQ+RzHPF078ddwwvV3Y=
 github.com/ajg/form v0.0.0-20160802194845-cc2954064ec9/go.mod h1:uL1WgH+h2mgNtvBq0339dVnzXdBETtL2LeUXaIv25UY=
 github.com/ajg/form v0.0.0-20160822230020-523a5da1a92f h1:zvClvFQwU++UpIUBGC8YmDlfhUrweEy1R1Fj1gu5iIM=
@@ -26,6 +27,8 @@ github.com/gobuffalo/buffalo-plugins v0.0.0-20180911185405-ca94b2cb30ad h1:yWoyT
 github.com/gobuffalo/buffalo-plugins v0.0.0-20180911185405-ca94b2cb30ad/go.mod h1:yswo2GHH1n0e2X6c5U2nsGcUZdeWYtj831GwOwE5GRE=
 github.com/gobuffalo/buffalo-plugins v0.0.0-20180921161543-8f255b52504e h1:RIY+2cild+vGXgBeLYxqSshrqEbxZw+KENWlTP4XyHA=
 github.com/gobuffalo/buffalo-plugins v0.0.0-20180921161543-8f255b52504e/go.mod h1:KW70gBMJxv+qSWDH1IETEKHGJ69J3JAtPFySrI8JWCA=
+github.com/gobuffalo/buffalo-plugins v0.0.0-20180922213526-48fd94ed4832 h1:/AIFWr0ua6Bd63GsS6OGopMIQNRO6ztcLR3hrGSbh/s=
+github.com/gobuffalo/buffalo-plugins v0.0.0-20180922213526-48fd94ed4832/go.mod h1:KW70gBMJxv+qSWDH1IETEKHGJ69J3JAtPFySrI8JWCA=
 github.com/gobuffalo/envy v1.6.3/go.mod h1:gOxUQY+OEwqH1a2m25Sqax1GIhj31tPNOIdFzj8QThs=
 github.com/gobuffalo/envy v1.6.4 h1:kxamN+VYjPMzEdjc2mn4CIKiuYXGxc8VIwXJNixFlNY=
 github.com/gobuffalo/envy v1.6.4/go.mod h1:Abh+Jfw475/NWtYMEt+hnJWRiC8INKWibIMyNt1w2Mc=
@@ -46,6 +49,8 @@ github.com/gobuffalo/genny v0.0.0-20180911185118-5ca23a895a78/go.mod h1:e694VPwR
 github.com/gobuffalo/genny v0.0.0-20180918201921-ac6244947a9a/go.mod h1:o0XtBk+olc3Kt5D6vld+XkKvUz3Y7t/SqcBNB2XB1lc=
 github.com/gobuffalo/genny v0.0.0-20180921151430-2d326bbbbcb1 h1:Qyc27As0QCkCgDW5t45SH/347Od1Kjo63U3hDEUVi1E=
 github.com/gobuffalo/genny v0.0.0-20180921151430-2d326bbbbcb1/go.mod h1:8wmnQwASeX0/m66Sd6qisbIBn9MGoxRbBe0DNEUVLZs=
+github.com/gobuffalo/genny v0.0.0-20180922164512-230e627635f7 h1:1SA6jy9YxQKKNFdPjqEh+Uof6vcL3O7N3gLBVmq2Bpc=
+github.com/gobuffalo/genny v0.0.0-20180922164512-230e627635f7/go.mod h1:8wmnQwASeX0/m66Sd6qisbIBn9MGoxRbBe0DNEUVLZs=
 github.com/gobuffalo/github_flavored_markdown v1.0.0 h1:e2dK+SoHgOc/vfXuYMdXwEg2vAUlFzp8SBRwTOXckQ0=
 github.com/gobuffalo/github_flavored_markdown v1.0.0/go.mod h1:c8/8gRnd6MSyyk+fp6E8O8cUTHd7P2cnDnH4G7o91l0=
 github.com/gobuffalo/httptest v1.0.1 h1:F7KibLzHAHy1UZVpqwcd95aKcoI3gbSj7FgkDZ9lHow=
@@ -121,6 +126,7 @@ github.com/joho/godotenv v1.3.0/go.mod h1:7hK45KPybAkOC6peb+G5yklZfMxEjkZhHbwpqx
 github.com/kr/pretty v0.1.0 h1:L/CwN0zerZDmRFUapSPitk6f+Q3+0za1rQkzVuMiMFI=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
+github.com/kr/pty v1.1.3/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
 github.com/kr/text v0.1.0 h1:45sCR5RtlFHMR4UwH9sdQ5TC8v0qDQCHnXt+kaKSTVE=
 github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
 github.com/lib/pq v0.0.0-20180523175426-90697d60dd84 h1:it29sI2IM490luSc3RAhp5WuCYnc6RtbfLVAB7nmC5M=
@@ -153,6 +159,8 @@ github.com/markbates/refresh v1.4.1 h1:+kEJt7Bz6Bn/pjmnbFHhyAEnO+mW0POtyqsVyK62o
 github.com/markbates/refresh v1.4.1/go.mod h1:og/05QDfszH/SCl3w8VI2Or990yna0wS2lqRcJoDqAg=
 github.com/markbates/refresh v1.4.6 h1:A1DIJRvuv8oQBOdDrbaArF+/pWFUT29AvPSpyh/e4DY=
 github.com/markbates/refresh v1.4.6/go.mod h1:2G3FyugwHQX33+HtC7B5X2ZioIxF4UzjjeKMLGuNELo=
+github.com/markbates/refresh v1.4.7 h1:4sS2slVCXtDjR7SQ1yp5V2iTPBLL629nqTDdTqENlPQ=
+github.com/markbates/refresh v1.4.7/go.mod h1:2G3FyugwHQX33+HtC7B5X2ZioIxF4UzjjeKMLGuNELo=
 github.com/markbates/sigtx v1.0.0 h1:y/xtkBvNPRjD4KeEplf4w9rJVSc23/xl+jXYGowTwy0=
 github.com/markbates/sigtx v1.0.0/go.mod h1:QF1Hv6Ic6Ca6W+T+DL0Y/ypborFKyvUY9HmuCD4VeTc=
 github.com/markbates/willie v1.0.6/go.mod h1:XtK+fmQ7tgVMIVAS1ghwuqVPup3GtgrNY3UCvUlPdzM=
@@ -200,6 +208,7 @@ github.com/shurcooL/go v0.0.0-20180423040247-9e1955d9fb6e/go.mod h1:TDJrrUr11Vxr
 github.com/shurcooL/go-goon v0.0.0-20170922171312-37c2f522c041 h1:llrF3Fs4018ePo4+G/HV/uQUqEI1HMDjCeOf2V6puPc=
 github.com/shurcooL/go-goon v0.0.0-20170922171312-37c2f522c041/go.mod h1:N5mDOmsrJOB+vfqUK+7DmDyjhSLIIBnXo9lvZJj3MWQ=
 github.com/shurcooL/graphql v0.0.0-20180514000029-62c9ce094e75/go.mod h1:AuYgA5Kyo4c7HfUmvRGs/6rGlMMV/6B1bVnB9JxJEEg=
+github.com/shurcooL/graphql v0.0.0-20180908223655-365899397c9a/go.mod h1:AuYgA5Kyo4c7HfUmvRGs/6rGlMMV/6B1bVnB9JxJEEg=
 github.com/shurcooL/highlight_diff v0.0.0-20170515013008-09bb4053de1b h1:vYEG87HxbU6dXj5npkeulCS96Dtz5xg3jcfCgpcvbIw=
 github.com/shurcooL/highlight_diff v0.0.0-20170515013008-09bb4053de1b/go.mod h1:ZpfEhSmds4ytuByIcDnOLkTHGUI6KNqRNPDLHDk+mUU=
 github.com/shurcooL/highlight_go v0.0.0-20170515013102-78fb10f4a5f8 h1:xLQlo0Ghg8zBaQi+tjpK+z/WLjbg/BhAWP9pYgqo/LQ=
@@ -226,6 +235,7 @@ github.com/spf13/viper v1.2.0/go.mod h1:P4AexN0a+C9tGAnUFNwDMYYZv3pjFuvmeiMyKRaN
 github.com/stretchr/testify v1.2.2 h1:bSDNvY7ZPG5RlJ8otE/7V6gMiyenm9RtJ7IUVIAoJ1w=
 github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
 github.com/unrolled/secure v0.0.0-20180618144512-8287f3899c8e/go.mod h1:mnPT77IAdsi/kV7+Es7y+pXALeV3h7G6dQF6mNYjcLA=
+github.com/unrolled/secure v0.0.0-20180918153822-f340ee86eb8b/go.mod h1:mnPT77IAdsi/kV7+Es7y+pXALeV3h7G6dQF6mNYjcLA=
 golang.org/x/crypto v0.0.0-20180808211826-de0752318171/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
 golang.org/x/crypto v0.0.0-20180904163835-0709b304e793 h1:u+LnwYTOOW7Ukr/fppxEb1Nwz0AtPflrblfvUudpo+I=
 golang.org/x/crypto v0.0.0-20180904163835-0709b304e793/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
@@ -259,6 +269,8 @@ golang.org/x/sys v0.0.0-20180918153733-ee1b12c67af4 h1:h8ij2QOL81JqJ/Vi5Ru+hl4a1
 golang.org/x/sys v0.0.0-20180918153733-ee1b12c67af4/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
 golang.org/x/sys v0.0.0-20180920110915-d641721ec2de h1:soC2mvPVpAV+Ld2qtpNn1eq25WTn76uIGNV23bofu6Q=
 golang.org/x/sys v0.0.0-20180920110915-d641721ec2de/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
+golang.org/x/sys v0.0.0-20180921163948-d47a0f339242 h1:5DYsa+ZAwcJHjuY0Qet390sUr7qwkpnRsUNjddyc0b8=
+golang.org/x/sys v0.0.0-20180921163948-d47a0f339242/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
 golang.org/x/text v0.3.0 h1:g61tztE5qeGQ89tm6NTjjM9VPIm088od1l6aSorWRWg=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/tools v0.0.0-20180904205237-0aa4b8830f48/go.mod h1:n7NCudcB/nEzxVGmLbDWY5pfWTLqBcC2KZ6jyYvM4mQ=
@@ -282,6 +294,7 @@ gopkg.in/gemnasium/logrus-airbrake-hook.v2 v2.1.2 h1:OAj3g0cR6Dx/R07QgQe8wkA9RNj
 gopkg.in/gemnasium/logrus-airbrake-hook.v2 v2.1.2/go.mod h1:Xk6kEKp8OKb+X14hQBKWaSkCsqBpgog8nAV2xsGOxlo=
 gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df/go.mod h1:LRQQ+SO6ZHR7tOkpBDuZnXENFzX8qRjMDMyPD6BRkCw=
 gopkg.in/mail.v2 v2.0.0-20180301192024-63235f23494b/go.mod h1:htwXN1Qh09vZJ1NVKxQqHPBaCBbzKhp5GzuJEA4VJWw=
+gopkg.in/mail.v2 v2.0.0-20180731213649-a0242b2233b4/go.mod h1:htwXN1Qh09vZJ1NVKxQqHPBaCBbzKhp5GzuJEA4VJWw=
 gopkg.in/russross/blackfriday.v1 v1.5.1 h1:/G8rrKhg8HTP6/VLtuQLbNSXHUzpDdNqZS5umeauNvc=
 gopkg.in/russross/blackfriday.v1 v1.5.1/go.mod h1:NAEMj3mL3YDCD1Mxuzav3y8y68EZs2OnJ9xdWYLES00=
 gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 h1:uRGJdciOHaEIrze2W8Q3AKkepLTh2hOroT7a+7czfdQ=

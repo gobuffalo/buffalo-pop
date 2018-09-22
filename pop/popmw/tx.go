@@ -19,21 +19,16 @@ import (
 // the request making database calls.
 func Transaction(db *pop.Connection) buffalo.MiddlewareFunc {
 	events.NamedListen("popmw.Transaction", func(e events.Event) {
-		if e.Kind != events.AppStart {
+		if e.Kind != "buffalo:app:start" {
 			return
 		}
-		var app *buffalo.App
-		var ok bool
-		for _, n := range []string{"app", "data"} {
-			app, ok = e.Payload[n].(*buffalo.App)
-			if ok {
-				break
-			}
-		}
-		if app == nil {
+		i, err := e.Payload.Pluck("app")
+		if err != nil {
 			return
 		}
-		pop.SetLogger(pp.Logger(app))
+		if app, ok := i.(*buffalo.App); ok {
+			pop.SetLogger(pp.Logger(app))
+		}
 	})
 	return func(h buffalo.Handler) buffalo.Handler {
 		return func(c buffalo.Context) error {
