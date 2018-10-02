@@ -45,7 +45,15 @@ Thank you to the following **GIANTS**:
 
 * [github.com/gobuffalo/fizz/translators](https://godoc.org/github.com/gobuffalo/fizz/translators)
 
+* [github.com/gobuffalo/flect](https://godoc.org/github.com/gobuffalo/flect)
+
+* [github.com/gobuffalo/flect/name](https://godoc.org/github.com/gobuffalo/flect/name)
+
 * [github.com/gobuffalo/genny](https://godoc.org/github.com/gobuffalo/genny)
+
+* [github.com/gobuffalo/genny/movinglater/gotools](https://godoc.org/github.com/gobuffalo/genny/movinglater/gotools)
+
+* [github.com/gobuffalo/genny/movinglater/gotools/goimports](https://godoc.org/github.com/gobuffalo/genny/movinglater/gotools/goimports)
 
 * [github.com/gobuffalo/genny/movinglater/gotools/gomods](https://godoc.org/github.com/gobuffalo/genny/movinglater/gotools/gomods)
 
@@ -76,6 +84,8 @@ Thank you to the following **GIANTS**:
 * [github.com/gobuffalo/pop/columns](https://godoc.org/github.com/gobuffalo/pop/columns)
 
 * [github.com/gobuffalo/pop/fix](https://godoc.org/github.com/gobuffalo/pop/fix)
+
+* [github.com/gobuffalo/pop/genny/config](https://godoc.org/github.com/gobuffalo/pop/genny/config)
 
 * [github.com/gobuffalo/pop/logging](https://godoc.org/github.com/gobuffalo/pop/logging)
 
@@ -112,6 +122,18 @@ Thank you to the following **GIANTS**:
 * [github.com/gorilla/securecookie](https://godoc.org/github.com/gorilla/securecookie)
 
 * [github.com/gorilla/sessions](https://godoc.org/github.com/gorilla/sessions)
+
+* [github.com/jackc/pgx](https://godoc.org/github.com/jackc/pgx)
+
+* [github.com/jackc/pgx/chunkreader](https://godoc.org/github.com/jackc/pgx/chunkreader)
+
+* [github.com/jackc/pgx/internal/sanitize](https://godoc.org/github.com/jackc/pgx/internal/sanitize)
+
+* [github.com/jackc/pgx/pgio](https://godoc.org/github.com/jackc/pgx/pgio)
+
+* [github.com/jackc/pgx/pgproto3](https://godoc.org/github.com/jackc/pgx/pgproto3)
+
+* [github.com/jackc/pgx/pgtype](https://godoc.org/github.com/jackc/pgx/pgtype)
 
 * [github.com/jmoiron/sqlx](https://godoc.org/github.com/jmoiron/sqlx)
 
@@ -190,5 +212,11 @@ Thank you to the following **GIANTS**:
 * [golang.org/x/sync/errgroup](https://godoc.org/golang.org/x/sync/errgroup)
 
 * [golang.org/x/sys/unix](https://godoc.org/golang.org/x/sys/unix)
+
+* [golang.org/x/tools/go/ast/astutil](https://godoc.org/golang.org/x/tools/go/ast/astutil)
+
+* [golang.org/x/tools/imports](https://godoc.org/golang.org/x/tools/imports)
+
+* [golang.org/x/tools/internal/fastwalk](https://godoc.org/golang.org/x/tools/internal/fastwalk)
 
 * [gopkg.in/yaml.v2](https://godoc.org/gopkg.in/yaml.v2)
