@@ -21,6 +21,8 @@ Thank you to the following **GIANTS**:
 
 * [github.com/gobuffalo/buffalo-plugins/plugins](https://godoc.org/github.com/gobuffalo/buffalo-plugins/plugins)
 
+* [github.com/gobuffalo/buffalo-plugins/plugins/plugdeps](https://godoc.org/github.com/gobuffalo/buffalo-plugins/plugins/plugdeps)
+
 * [github.com/gobuffalo/buffalo-pop](https://godoc.org/github.com/gobuffalo/buffalo-pop)
 
 * [github.com/gobuffalo/buffalo-pop/cmd](https://godoc.org/github.com/gobuffalo/buffalo-pop/cmd)
@@ -64,6 +66,8 @@ Thank you to the following **GIANTS**:
 * [github.com/gobuffalo/makr](https://godoc.org/github.com/gobuffalo/makr)
 
 * [github.com/gobuffalo/mapi](https://godoc.org/github.com/gobuffalo/mapi)
+
+* [github.com/gobuffalo/meta](https://godoc.org/github.com/gobuffalo/meta)
 
 * [github.com/gobuffalo/packr](https://godoc.org/github.com/gobuffalo/packr)
 
@@ -115,6 +119,8 @@ Thank you to the following **GIANTS**:
 
 * [github.com/gobuffalo/x/randx](https://godoc.org/github.com/gobuffalo/x/randx)
 
+* [github.com/gofrs/uuid](https://godoc.org/github.com/gofrs/uuid)
+
 * [github.com/gorilla/context](https://godoc.org/github.com/gorilla/context)
 
 * [github.com/gorilla/mux](https://godoc.org/github.com/gorilla/mux)
@@ -140,6 +146,8 @@ Thank you to the following **GIANTS**:
 * [github.com/jmoiron/sqlx/reflectx](https://godoc.org/github.com/jmoiron/sqlx/reflectx)
 
 * [github.com/joho/godotenv](https://godoc.org/github.com/joho/godotenv)
+
+* [github.com/karrick/godirwalk](https://godoc.org/github.com/karrick/godirwalk)
 
 * [github.com/kballard/go-shellquote](https://godoc.org/github.com/kballard/go-shellquote)
 
@@ -172,6 +180,8 @@ Thank you to the following **GIANTS**:
 * [github.com/mitchellh/go-homedir](https://godoc.org/github.com/mitchellh/go-homedir)
 
 * [github.com/monoculum/formam](https://godoc.org/github.com/monoculum/formam)
+
+* [github.com/pelletier/go-toml](https://godoc.org/github.com/pelletier/go-toml)
 
 * [github.com/pkg/errors](https://godoc.org/github.com/pkg/errors)
 
@@ -218,5 +228,7 @@ Thank you to the following **GIANTS**:
 * [golang.org/x/tools/imports](https://godoc.org/golang.org/x/tools/imports)
 
 * [golang.org/x/tools/internal/fastwalk](https://godoc.org/golang.org/x/tools/internal/fastwalk)
+
+* [golang.org/x/tools/internal/gopathwalk](https://godoc.org/golang.org/x/tools/internal/gopathwalk)
 
 * [gopkg.in/yaml.v2](https://godoc.org/gopkg.in/yaml.v2)
