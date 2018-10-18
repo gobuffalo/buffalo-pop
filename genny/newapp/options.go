@@ -1,6 +1,6 @@
 package newapp
 
-import "github.com/gobuffalo/buffalo/meta"
+import "github.com/gobuffalo/meta"
 
 type Options struct {
 	App     meta.App

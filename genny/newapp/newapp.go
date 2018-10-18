@@ -1,22 +1,23 @@
 package newapp
 
 import (
-	"errors"
-	"os/exec"
-
-	"github.com/gobuffalo/buffalo/meta"
 	"github.com/gobuffalo/genny"
+	"github.com/gobuffalo/genny/movinglater/gotools"
 	"github.com/gobuffalo/genny/movinglater/plushgen"
+	"github.com/gobuffalo/meta"
 	"github.com/gobuffalo/packr"
 	"github.com/gobuffalo/plush"
-	"github.com/gobuffalo/pop/soda/cmd/generate"
+	"github.com/gobuffalo/pop/genny/config"
+	"github.com/pkg/errors"
 )
 
-func New(opts *Options) (*genny.Generator, error) {
+func New(opts *Options) (*genny.Group, error) {
+	gg := &genny.Group{}
+
 	if opts.Prefix == "" {
-		return nil, errors.New("you must provide a database name prefix")
+		return gg, errors.New("you must provide a database name prefix")
 	}
-	if (opts.App == meta.App{}) {
+	if opts.App.IsZero() {
 		opts.App = meta.New(".")
 	}
 	g := genny.New()
@@ -25,14 +26,21 @@ func New(opts *Options) (*genny.Generator, error) {
 	ctx := plush.NewContext()
 	ctx.Set("opts", opts)
 	g.Transformer(plushgen.Transformer(ctx))
-	g.Transformer(genny.Replace("-dot-", "."))
-	g.Command(exec.Command(genny.GoBin(), "get", "github.com/gobuffalo/pop/..."))
-	g.RunFn(func(r *genny.Runner) error {
-		data := map[string]interface{}{
-			"dialect": opts.Dialect,
-			"name":    opts.Prefix,
-		}
-		return generate.Config("./database.yml", data)
+	g.Transformer(genny.Dot())
+
+	g.RunFn(gotools.Get("github.com/gobuffalo/pop"))
+
+	gg.Add(g)
+
+	g, err := config.New(&config.Options{
+		Dialect:  opts.Dialect,
+		Prefix:   opts.Prefix,
+		FileName: "database.yml",
+		Root:     opts.App.Root,
 	})
-	return g, nil
+	if err != nil {
+		return gg, errors.WithStack(err)
+	}
+	gg.Add(g)
+	return gg, nil
 }

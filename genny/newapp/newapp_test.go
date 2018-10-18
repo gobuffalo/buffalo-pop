@@ -1,11 +1,10 @@
 package newapp
 
 import (
-	"context"
 	"os"
 	"testing"
 
-	"github.com/gobuffalo/genny"
+	"github.com/gobuffalo/genny/gentest"
 	"github.com/gobuffalo/pop"
 	"github.com/stretchr/testify/require"
 )
@@ -14,20 +13,20 @@ func Test_New(t *testing.T) {
 	r := require.New(t)
 
 	for _, d := range pop.AvailableDialects {
-		run := genny.DryRunner(context.Background())
+		run := gentest.NewRunner()
 		err := run.Chdir(os.TempDir(), func() error {
 			g, err := New(&Options{
 				Prefix:  "foo",
 				Dialect: d,
 			})
 			r.NoError(err)
-			run.With(g)
+			run.WithGroup(g)
 
 			r.NoError(run.Run())
 
 			res := run.Results()
 			r.Len(res.Commands, 1)
-			r.Len(res.Files, 3)
+			r.Len(res.Files, 4)
 			return nil
 		})
 		r.NoError(err)
