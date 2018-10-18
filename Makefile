@@ -22,7 +22,7 @@ test:
 	$(GO_BIN) test -tags ${TAGS} ./...
 
 ci-test:
-	$(GO_BIN) test -tags ${TAGS} -race ./...
+	$(GO_BIN) test -tags ${TAGS} ./...
 
 lint:
 	gometalinter --vendor ./... --deadline=1m --skip=internal
@@ -40,7 +40,7 @@ ifeq ($(GO111MODULE),on)
 endif
 
 release-test:
-	$(GO_BIN) test -tags ${TAGS} -race ./...
+	$(GO_BIN) test -tags ${TAGS} ./...
 
 release:
 	release -y -f version.go
