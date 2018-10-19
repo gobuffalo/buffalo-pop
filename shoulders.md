@@ -5,6 +5,8 @@ github.com/gobuffalo/buffalo-pop does not try to reinvent the wheel! Instead, it
 Thank you to the following **GIANTS**:
 
 
+* [github.com/BurntSushi/toml](https://godoc.org/github.com/BurntSushi/toml)
+
 * [github.com/cockroachdb/cockroach-go/crdb](https://godoc.org/github.com/cockroachdb/cockroach-go/crdb)
 
 * [github.com/dustin/go-humanize](https://godoc.org/github.com/dustin/go-humanize)
@@ -169,6 +171,8 @@ Thank you to the following **GIANTS**:
 
 * [github.com/markbates/refresh/refresh/web](https://godoc.org/github.com/markbates/refresh/refresh/web)
 
+* [github.com/markbates/safe](https://godoc.org/github.com/markbates/safe)
+
 * [github.com/markbates/sigtx](https://godoc.org/github.com/markbates/sigtx)
 
 * [github.com/mattn/go-colorable](https://godoc.org/github.com/mattn/go-colorable)
@@ -180,8 +184,6 @@ Thank you to the following **GIANTS**:
 * [github.com/mitchellh/go-homedir](https://godoc.org/github.com/mitchellh/go-homedir)
 
 * [github.com/monoculum/formam](https://godoc.org/github.com/monoculum/formam)
-
-* [github.com/pelletier/go-toml](https://godoc.org/github.com/pelletier/go-toml)
 
 * [github.com/pkg/errors](https://godoc.org/github.com/pkg/errors)
 
