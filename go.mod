@@ -8,6 +8,7 @@ require (
 	github.com/gobuffalo/buffalo-plugins v1.6.1
 	github.com/gobuffalo/events v1.1.1
 	github.com/gobuffalo/fizz v1.0.12 // indirect
+	github.com/gobuffalo/flect v0.0.0-20181019110701-3d6f0b585514 // indirect
 	github.com/gobuffalo/genny v0.0.0-20181019144442-df0a36fdd146
 	github.com/gobuffalo/httptest v1.0.2
 	github.com/gobuffalo/meta v0.0.0-20181018192820-8c6cef77dab3
@@ -25,4 +26,6 @@ require (
 	github.com/sirupsen/logrus v1.1.1
 	github.com/spf13/cobra v0.0.3
 	github.com/stretchr/testify v1.2.2
+	golang.org/x/sys v0.0.0-20181019084534-8f1d3d21f81b // indirect
+	golang.org/x/tools v0.0.0-20181019005945-6adeb8aab2de // indirect
 )
