@@ -12,7 +12,6 @@ require (
 	github.com/gobuffalo/plush v3.7.21+incompatible
 	github.com/gobuffalo/pop v4.8.5+incompatible
 	github.com/gobuffalo/uuid v2.0.5+incompatible
-	github.com/kr/pty v1.1.3 // indirect
 	github.com/markbates/inflect v1.0.3
 	github.com/pkg/errors v0.8.0
 	github.com/sirupsen/logrus v1.1.1
