@@ -2,10 +2,9 @@ module github.com/gobuffalo/buffalo-pop
 
 require (
 	github.com/fatih/color v1.7.0
-	github.com/gobuffalo/buffalo v0.13.1
+	github.com/gobuffalo/buffalo v0.13.2
 	github.com/gobuffalo/buffalo-plugins v1.6.6
 	github.com/gobuffalo/events v1.1.5
-	github.com/gobuffalo/fizz v1.0.15 // indirect
 	github.com/gobuffalo/genny v0.0.0-20181025145300-af3f81d526b8
 	github.com/gobuffalo/httptest v1.0.2
 	github.com/gobuffalo/meta v0.0.0-20181025145500-3a985a084b0a
