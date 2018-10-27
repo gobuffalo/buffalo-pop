@@ -7,6 +7,8 @@ Thank you to the following **GIANTS**:
 
 * [github.com/BurntSushi/toml](https://godoc.org/github.com/BurntSushi/toml)
 
+* [github.com/blang/semver](https://godoc.org/github.com/blang/semver)
+
 * [github.com/cockroachdb/cockroach-go/crdb](https://godoc.org/github.com/cockroachdb/cockroach-go/crdb)
 
 * [github.com/dustin/go-humanize](https://godoc.org/github.com/dustin/go-humanize)
@@ -72,6 +74,8 @@ Thank you to the following **GIANTS**:
 * [github.com/gobuffalo/mapi](https://godoc.org/github.com/gobuffalo/mapi)
 
 * [github.com/gobuffalo/meta](https://godoc.org/github.com/gobuffalo/meta)
+
+* [github.com/gobuffalo/packd](https://godoc.org/github.com/gobuffalo/packd)
 
 * [github.com/gobuffalo/packr](https://godoc.org/github.com/gobuffalo/packr)
 
