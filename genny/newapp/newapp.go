@@ -6,9 +6,12 @@ import (
 	"github.com/gobuffalo/genny/movinglater/plushgen"
 	"github.com/gobuffalo/packr"
 	"github.com/gobuffalo/plush"
+	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/pop/genny/config"
 	"github.com/pkg/errors"
 )
+
+var AvailableDialects = pop.AvailableDialects
 
 func New(opts *Options) (*genny.Group, error) {
 	gg := &genny.Group{}
