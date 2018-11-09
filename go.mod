@@ -5,11 +5,11 @@ require (
 	github.com/cockroachdb/cockroach-go v0.0.0-20181001143604-e0a95dfd547c // indirect
 	github.com/fatih/color v1.7.0
 	github.com/gobuffalo/buffalo v0.13.4
-	github.com/gobuffalo/buffalo-plugins v1.6.8
-	github.com/gobuffalo/events v1.1.5
-	github.com/gobuffalo/genny v0.0.0-20181106193839-7dcb0924caf1
+	github.com/gobuffalo/buffalo-plugins v1.6.9
+	github.com/gobuffalo/events v1.1.6
+	github.com/gobuffalo/genny v0.0.0-20181109163038-9539921b620f
 	github.com/gobuffalo/httptest v1.0.3
-	github.com/gobuffalo/meta v0.0.0-20181025145500-3a985a084b0a
+	github.com/gobuffalo/meta v0.0.0-20181109154556-f76929ccd5fa
 	github.com/gobuffalo/packr v1.19.0
 	github.com/gobuffalo/plush v3.7.22+incompatible
 	github.com/gobuffalo/pop v4.8.8+incompatible
