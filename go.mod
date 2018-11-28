@@ -11,6 +11,7 @@ require (
 	github.com/gobuffalo/httptest v1.0.5
 	github.com/gobuffalo/meta v0.0.0-20181116202903-8850e47774f5
 	github.com/gobuffalo/packr v1.21.5
+	github.com/gobuffalo/packr/v2 v2.0.0-rc.8
 	github.com/gobuffalo/plush v3.7.23+incompatible
 	github.com/gobuffalo/plushgen v0.0.0-20181128164830-d29dcb966cb2
 	github.com/gobuffalo/pop v4.9.2+incompatible

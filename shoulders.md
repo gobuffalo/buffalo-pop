@@ -87,8 +87,6 @@ Thank you to the following **GIANTS**:
 
 * [github.com/gobuffalo/packd](https://godoc.org/github.com/gobuffalo/packd)
 
-* [github.com/gobuffalo/packr](https://godoc.org/github.com/gobuffalo/packr)
-
 * [github.com/gobuffalo/packr/v2](https://godoc.org/github.com/gobuffalo/packr/v2)
 
 * [github.com/gobuffalo/packr/v2/file](https://godoc.org/github.com/gobuffalo/packr/v2/file)
@@ -130,6 +128,8 @@ Thank you to the following **GIANTS**:
 * [github.com/gobuffalo/pop/soda/cmd/generate](https://godoc.org/github.com/gobuffalo/pop/soda/cmd/generate)
 
 * [github.com/gobuffalo/pop/soda/cmd/schema](https://godoc.org/github.com/gobuffalo/pop/soda/cmd/schema)
+
+* [github.com/gobuffalo/syncx](https://godoc.org/github.com/gobuffalo/syncx)
 
 * [github.com/gobuffalo/tags](https://godoc.org/github.com/gobuffalo/tags)
 
@@ -234,8 +234,6 @@ Thank you to the following **GIANTS**:
 * [golang.org/x/crypto/blowfish](https://godoc.org/golang.org/x/crypto/blowfish)
 
 * [golang.org/x/crypto/ssh/terminal](https://godoc.org/golang.org/x/crypto/ssh/terminal)
-
-* [golang.org/x/net/context](https://godoc.org/golang.org/x/net/context)
 
 * [golang.org/x/net/html](https://godoc.org/golang.org/x/net/html)
 

@@ -1,3 +1,3 @@
 package pop
 
-const Version = "v1.1.15"
+const Version = "v1.2.0"
