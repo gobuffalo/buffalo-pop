@@ -3,9 +3,9 @@ package newapp
 import (
 	"github.com/gobuffalo/genny"
 	"github.com/gobuffalo/genny/movinglater/gotools"
-	"github.com/gobuffalo/genny/movinglater/plushgen"
 	"github.com/gobuffalo/packr"
 	"github.com/gobuffalo/plush"
+	"github.com/gobuffalo/plushgen"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/pop/genny/config"
 	"github.com/pkg/errors"
