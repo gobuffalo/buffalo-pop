@@ -8,7 +8,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/markbates/inflect"
+	"github.com/gobuffalo/flect"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )
@@ -25,7 +25,7 @@ var ModelCmd = &cobra.Command{
 		}
 
 		name := args[0]
-		fileName := inflect.Pluralize(inflect.Underscore(name))
+		fileName := flect.Pluralize(flect.Underscore(name))
 
 		removeModel(name)
 		removeMigrations(fileName)
@@ -44,7 +44,7 @@ func confirm(msg string) bool {
 
 func removeModel(name string) {
 	if YesToAll || confirm("Want to remove model? (Y/n)") {
-		modelFileName := inflect.Singularize(inflect.Underscore(name))
+		modelFileName := flect.Singularize(flect.Underscore(name))
 
 		os.Remove(filepath.Join("models", fmt.Sprintf("%v.go", modelFileName)))
 		os.Remove(filepath.Join("models", fmt.Sprintf("%v_test.go", modelFileName)))
