@@ -3,7 +3,7 @@ package newapp
 import (
 	"github.com/gobuffalo/genny"
 	"github.com/gobuffalo/genny/movinglater/gotools"
-	"github.com/gobuffalo/packr"
+	"github.com/gobuffalo/packr/v2"
 	"github.com/gobuffalo/plush"
 	"github.com/gobuffalo/plushgen"
 	"github.com/gobuffalo/pop"
@@ -21,7 +21,7 @@ func New(opts *Options) (*genny.Group, error) {
 	}
 
 	g := genny.New()
-	g.Box(packr.NewBox("../newapp/templates"))
+	g.Box(packr.New("github.com/gobuffalo/buffalo-pop/genny/newapp/templates", "../newapp/templates"))
 
 	ctx := plush.NewContext()
 	ctx.Set("opts", opts)
