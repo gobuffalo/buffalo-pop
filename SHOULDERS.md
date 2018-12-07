@@ -33,6 +33,8 @@ Thank you to the following **GIANTS**:
 
 * [github.com/gobuffalo/buffalo-pop/cmd/destroy](https://godoc.org/github.com/gobuffalo/buffalo-pop/cmd/destroy)
 
+* [github.com/gobuffalo/buffalo-pop/packrd](https://godoc.org/github.com/gobuffalo/buffalo-pop/packrd)
+
 * [github.com/gobuffalo/buffalo-pop/pop](https://godoc.org/github.com/gobuffalo/buffalo-pop/pop)
 
 * [github.com/gobuffalo/buffalo/binding](https://godoc.org/github.com/gobuffalo/buffalo/binding)
@@ -200,6 +202,10 @@ Thank you to the following **GIANTS**:
 * [github.com/markbates/safe](https://godoc.org/github.com/markbates/safe)
 
 * [github.com/markbates/sigtx](https://godoc.org/github.com/markbates/sigtx)
+
+* [github.com/mattn/go-colorable](https://godoc.org/github.com/mattn/go-colorable)
+
+* [github.com/mattn/go-isatty](https://godoc.org/github.com/mattn/go-isatty)
 
 * [github.com/microcosm-cc/bluemonday](https://godoc.org/github.com/microcosm-cc/bluemonday)
 
