@@ -1,10 +1,8 @@
 TAGS ?= "sqlite"
 GO_BIN ?= go
 
-install:
-	packr2
+install: generate
 	$(GO_BIN) install -tags ${TAGS} -v
-	make tidy
 
 tidy:
 ifeq ($(GO111MODULE),on)
@@ -19,36 +17,30 @@ deps:
 	$(GO_BIN) get -tags ${TAGS} -t ./...
 	make tidy
 
-build:
-	packr2
-	$(GO_BIN) build -v .
-	make tidy
+generate:
+	$(GO_BIN) generate
 
-test:
-	packr2
+build: generate tidy
+	$(GO_BIN) build -v .
+
+test: generate tidy
 	$(GO_BIN) test -tags ${TAGS} ./...
-	make tidy
 
 ci-test:
 	$(GO_BIN) test -tags ${TAGS} -race ./...
-	make tidy
 
 lint:
 	gometalinter --vendor ./... --deadline=1m --skip=internal
-	make tidy
 
 update:
 	$(GO_BIN) get -u -tags ${TAGS}
+	make generate
 	make tidy
-	packr2
 	make test
 	make install
-	make tidy
 
 release-test:
 	make test
 
 release:
-	make tidy
 	release -y -f ./pop/version.go
-	make tidy
