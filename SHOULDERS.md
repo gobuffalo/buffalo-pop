@@ -33,6 +33,8 @@ Thank you to the following **GIANTS**:
 
 * [github.com/gobuffalo/buffalo-pop/cmd/destroy](https://godoc.org/github.com/gobuffalo/buffalo-pop/cmd/destroy)
 
+* [github.com/gobuffalo/buffalo-pop/packrd](https://godoc.org/github.com/gobuffalo/buffalo-pop/packrd)
+
 * [github.com/gobuffalo/buffalo-pop/pop](https://godoc.org/github.com/gobuffalo/buffalo-pop/pop)
 
 * [github.com/gobuffalo/buffalo/binding](https://godoc.org/github.com/gobuffalo/buffalo/binding)
@@ -120,8 +122,6 @@ Thank you to the following **GIANTS**:
 * [github.com/gobuffalo/pop/logging](https://godoc.org/github.com/gobuffalo/pop/logging)
 
 * [github.com/gobuffalo/pop/nulls](https://godoc.org/github.com/gobuffalo/pop/nulls)
-
-* [github.com/gobuffalo/pop/packrd](https://godoc.org/github.com/gobuffalo/pop/packrd)
 
 * [github.com/gobuffalo/pop/soda/cmd](https://godoc.org/github.com/gobuffalo/pop/soda/cmd)
 
