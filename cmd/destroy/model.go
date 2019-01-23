@@ -43,7 +43,7 @@ func confirm(msg string) bool {
 }
 
 func removeModel(name string) {
-	if YesToAll || confirm("Want to remove model? (Y/n)") {
+	if YesToAll || confirm("Want to remove model? (y/N)") {
 		modelFileName := flect.Singularize(flect.Underscore(name))
 
 		os.Remove(filepath.Join("models", fmt.Sprintf("%v.go", modelFileName)))
@@ -69,7 +69,7 @@ func removeMatch(folder, pattern string) {
 }
 
 func removeMigrations(fileName string) {
-	if YesToAll || confirm("Want to remove migrations? (Y/n)") {
+	if YesToAll || confirm("Want to remove migrations? (y/N)") {
 		removeMatch("migrations", fmt.Sprintf("*_create_%v.up.*", fileName))
 		removeMatch("migrations", fmt.Sprintf("*_create_%v.down.*", fileName))
 	}
