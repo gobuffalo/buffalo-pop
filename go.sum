@@ -47,6 +47,7 @@ github.com/gliderlabs/ssh v0.1.1/go.mod h1:U7qILu1NlMHj9FlMhZLlkCdDnU1DBEAqr0aev
 github.com/go-sql-driver/mysql v1.4.0/go.mod h1:zAC/RDZ24gD3HViQzih4MyKcchzm+sOG5ZlKdlhCg5w=
 github.com/go-sql-driver/mysql v1.4.1 h1:g24URVg0OFbNUTx9qqY1IRZ9D9z3iPyi5zKhQZpNwpA=
 github.com/go-sql-driver/mysql v1.4.1/go.mod h1:zAC/RDZ24gD3HViQzih4MyKcchzm+sOG5ZlKdlhCg5w=
+github.com/gobuffalo/attrs v0.0.0-20190219185331-f338c9388485/go.mod h1:4duuawTqi2wkkpB4ePgWMaai6/Kc6WEz83bhFwpHzj0=
 github.com/gobuffalo/buffalo v0.12.8-0.20181004233540-fac9bb505aa8/go.mod h1:sLyT7/dceRXJUxSsE813JTQtA3Eb1vjxWfo/N//vXIY=
 github.com/gobuffalo/buffalo v0.13.0/go.mod h1:Mjn1Ba9wpIbpbrD+lIDMy99pQ0H0LiddMIIDGse7qT4=
 github.com/gobuffalo/buffalo v0.13.1/go.mod h1:K9c22KLfDz7obgxvHv1amvJtCQEZNiox9+q6FDJ1Zcs=
@@ -61,6 +62,9 @@ github.com/gobuffalo/buffalo v0.13.12 h1:xiCpXvVf3qLlFePFoPG7Qt9rRH/YlhtERJfaspA
 github.com/gobuffalo/buffalo v0.13.12/go.mod h1:Y9e0p0cdo/eI+lHm7EFzlkc9YzjwGo5QeDj+FbsyqVA=
 github.com/gobuffalo/buffalo v0.13.13 h1:LInr0rbrLu6I1psKWrQwUp55dcXyqOmvzqyhOB2Uhew=
 github.com/gobuffalo/buffalo v0.13.13/go.mod h1:WAL36xBN8OkU71lNjuYv6llmgl0o8twjlY+j7oGUmYw=
+github.com/gobuffalo/buffalo v0.14.0 h1:RBVQiWQiI1858uriJjFPN3IPx4r7q01lBHnY8UEVHFs=
+github.com/gobuffalo/buffalo v0.14.0/go.mod h1:A9JI3juErlXNrPBeJ/0Pdky9Wz+GffEg7ZN0d1B5h48=
+github.com/gobuffalo/buffalo-docker v1.0.5/go.mod h1:NZ3+21WIdqOUlOlM2onCt7cwojYp4Qwlsngoolw8zlE=
 github.com/gobuffalo/buffalo-plugins v1.0.2/go.mod h1:pOp/uF7X3IShFHyobahTkTLZaeUXwb0GrUTb9ngJWTs=
 github.com/gobuffalo/buffalo-plugins v1.0.4/go.mod h1:pWS1vjtQ6uD17MVFWf7i3zfThrEKWlI5+PYLw/NaDB4=
 github.com/gobuffalo/buffalo-plugins v1.4.3/go.mod h1:uCzTY0woez4nDMdQjkcOYKanngeUVRO2HZi7ezmAjWY=
@@ -97,6 +101,8 @@ github.com/gobuffalo/buffalo-pop v1.1.15/go.mod h1:vnvvxhbEFAaEbac9E2ZPjsBeL7WHk
 github.com/gobuffalo/buffalo-pop v1.2.1/go.mod h1:SHqojN0bVzaAzCbQDdWtsib202FDIxqwmCO8VDdweF4=
 github.com/gobuffalo/buffalo-pop v1.3.0/go.mod h1:P0PhA225dRGyv0WkgYjYKqgoxPdDPDFZDvHj60AGF5w=
 github.com/gobuffalo/buffalo-pop v1.6.0/go.mod h1:vrEVNOBKe042HjSNMj72J4FgER/VG6lt4xW6WMpTdlY=
+github.com/gobuffalo/buffalo-pop v1.7.0/go.mod h1:UB5HHeFucJG7esTPUPjinBaJTEpVoREJHfSJJELnyeI=
+github.com/gobuffalo/depgen v0.0.0-20190219190223-ba8c93fa0c2c/go.mod h1:CE/HUV4vDCXtJayRf6WoMWgezb1yH4QHg8GNK8FL0JI=
 github.com/gobuffalo/envy v1.6.4/go.mod h1:Abh+Jfw475/NWtYMEt+hnJWRiC8INKWibIMyNt1w2Mc=
 github.com/gobuffalo/envy v1.6.5/go.mod h1:N+GkhhZ/93bGZc6ZKhJLP6+m+tCNPKwgSpH9kaifseQ=
 github.com/gobuffalo/envy v1.6.6/go.mod h1:N+GkhhZ/93bGZc6ZKhJLP6+m+tCNPKwgSpH9kaifseQ=
@@ -188,10 +194,15 @@ github.com/gobuffalo/genny v0.0.0-20190124191459-3310289fa4b4/go.mod h1:yIRqxhZV
 github.com/gobuffalo/genny v0.0.0-20190131150032-1045e97d19fb/go.mod h1:yIRqxhZV2sAzb+B3iPUMLauTRrYP8tJUlZ1zV9teKik=
 github.com/gobuffalo/genny v0.0.0-20190131190646-008a76242145 h1:2q3JD9pBzT3v6Rp0wBnYQyqMxP0X8YQoPYbyEPqHXWg=
 github.com/gobuffalo/genny v0.0.0-20190131190646-008a76242145/go.mod h1:NJvPZJxb9M4z790P6N2SMZKSUYpASpEvLuUWnHGKzb4=
+github.com/gobuffalo/genny v0.0.0-20190219203444-c95082806342 h1:ewzWZ+TT9/3wYSnUPQRU7YFzqWAx4dgUXdgvJVTVLCA=
+github.com/gobuffalo/genny v0.0.0-20190219203444-c95082806342/go.mod h1:3BLT+Vs94EEz3fKR8WWOkYpL6c1tdJcZUNCe3LZAnvQ=
+github.com/gobuffalo/gitgen v0.0.0-20190219185555-91c2c5f0aad5/go.mod h1:ZzGIrxBvCJEluaU4i3CN0GFlu1Qmb3yK8ziV02evJ1E=
 github.com/gobuffalo/github_flavored_markdown v1.0.4/go.mod h1:uRowCdK+q8d/RF0Kt3/DSalaIXbb0De/dmTqMQdkQ4I=
 github.com/gobuffalo/github_flavored_markdown v1.0.5/go.mod h1:U0643QShPF+OF2tJvYNiYDLDGDuQmJZXsf/bHOJPsMY=
 github.com/gobuffalo/github_flavored_markdown v1.0.7 h1:Vjvz4wqOnviiLEfTh5bh270b3lhpJiwwQEWOWmHMwY8=
 github.com/gobuffalo/github_flavored_markdown v1.0.7/go.mod h1:w93Pd9Lz6LvyQXEG6DktTPHkOtCbr+arAD5mkwMzXLI=
+github.com/gobuffalo/gogen v0.0.0-20190219194924-d32a17ad9761 h1:KJFgsBn2pl82SyCJrVO1ksoJq7u5a+f1MeBvmjHtGTk=
+github.com/gobuffalo/gogen v0.0.0-20190219194924-d32a17ad9761/go.mod h1:v47C8sid+ZM2qK+YpQ2MGJKssKAqyTsH1wl/pTCPdz8=
 github.com/gobuffalo/httptest v1.0.2/go.mod h1:7T1IbSrg60ankme0aDLVnEY0h056g9M1/ZvpVThtB7E=
 github.com/gobuffalo/httptest v1.0.3/go.mod h1:7T1IbSrg60ankme0aDLVnEY0h056g9M1/ZvpVThtB7E=
 github.com/gobuffalo/httptest v1.0.4/go.mod h1:7T1IbSrg60ankme0aDLVnEY0h056g9M1/ZvpVThtB7E=
@@ -328,6 +339,8 @@ github.com/gobuffalo/pop v4.9.5+incompatible/go.mod h1:DwBz3SD5SsHpTZiTubcsFWcVD
 github.com/gobuffalo/pop v4.9.6+incompatible/go.mod h1:DwBz3SD5SsHpTZiTubcsFWcVDpJWGsxjVjMPnkiThWg=
 github.com/gobuffalo/pop v4.9.8+incompatible h1:38Y8gtcy+nIYR+nJkeTXbcvQDQk0V502V88HwhLW+Ns=
 github.com/gobuffalo/pop v4.9.8+incompatible/go.mod h1:DwBz3SD5SsHpTZiTubcsFWcVDpJWGsxjVjMPnkiThWg=
+github.com/gobuffalo/pop v4.9.9+incompatible h1:zSxJYSuXEEeJhVjdWxySe58A8fvuO4n3CehEZZQGgAI=
+github.com/gobuffalo/pop v4.9.9+incompatible/go.mod h1:DwBz3SD5SsHpTZiTubcsFWcVDpJWGsxjVjMPnkiThWg=
 github.com/gobuffalo/release v1.0.35/go.mod h1:VtHFAKs61vO3wboCec5xr9JPTjYyWYcvaM3lclkc4x4=
 github.com/gobuffalo/release v1.0.38/go.mod h1:VtHFAKs61vO3wboCec5xr9JPTjYyWYcvaM3lclkc4x4=
 github.com/gobuffalo/release v1.0.42/go.mod h1:RPs7EtafH4oylgetOJpGP0yCZZUiO4vqHfTHJjSdpug=
@@ -440,6 +453,7 @@ github.com/lib/pq v1.0.0/go.mod h1:5WUZQaWbwv1U+lTReE5YruASi9Al49XbQIvNi/34Woo=
 github.com/magiconair/properties v1.8.0/go.mod h1:PppfXfuXeibc/6YijjN8zIbojt8czPbwD3XqdrwzmxQ=
 github.com/markbates/deplist v1.0.4/go.mod h1:gRRbPbbuA8TmMiRvaOzUlRfzfjeCCBqX2A6arxN01MM=
 github.com/markbates/deplist v1.0.5/go.mod h1:gRRbPbbuA8TmMiRvaOzUlRfzfjeCCBqX2A6arxN01MM=
+github.com/markbates/deplist v1.1.3/go.mod h1:BF7ioVzAJYEtzQN/os4rt8H8Ti3h0T7EoN+7eyALktE=
 github.com/markbates/going v1.0.2 h1:uNQHDDfMRNOUmuxDbPbvatyw4wr4UOSUZkGkdkcip1o=
 github.com/markbates/going v1.0.2/go.mod h1:UWCk3zm0UKefHZ7l8BNqi26UyiEMniznk8naLdTcy6c=
 github.com/markbates/going v1.0.3 h1:mY45T5TvW+Xz5A6jY7lf4+NLg9D8+iuStIHyR7M8qsE=
@@ -465,6 +479,8 @@ github.com/markbates/refresh v1.4.11/go.mod h1:awpJuyo4zgexB/JaHfmBX0sRdvOjo2dXw
 github.com/markbates/refresh v1.5.0/go.mod h1:ZYMLkxV+x7wXQ2Xd7bXAPyF0EXiEWAMfiy/4URYb1+M=
 github.com/markbates/refresh v1.6.0 h1:Tz/lJ8YZAaC3bprfUInQx27pJlbODZ/JAb6LEbAzzJs=
 github.com/markbates/refresh v1.6.0/go.mod h1:p8jWGABFUaFf/cSw0pxbo0MQVujiz5NTQ0bmCHLC4ac=
+github.com/markbates/refresh v1.7.0 h1:d02YDVdh1xUndTaCoz09h34BBGz3hkD/g7721IQLzlE=
+github.com/markbates/refresh v1.7.0/go.mod h1:NmC1QMlt2FiuKOEwuBC99hrVImu2TxKLKoyNVM+3s3c=
 github.com/markbates/safe v1.0.0/go.mod h1:nAqgmRi7cY2nqMc92/bSEeQA+R4OheNU2T1kNSCBdG0=
 github.com/markbates/safe v1.0.1 h1:yjZkbvRM6IzKj9tlu/zMJLS0n/V351OZWRnF3QfaUxI=
 github.com/markbates/safe v1.0.1/go.mod h1:nAqgmRi7cY2nqMc92/bSEeQA+R4OheNU2T1kNSCBdG0=
@@ -567,6 +583,7 @@ github.com/sourcegraph/syntaxhighlight v0.0.0-20170531221838-bd320f5d308e h1:qpG
 github.com/sourcegraph/syntaxhighlight v0.0.0-20170531221838-bd320f5d308e/go.mod h1:HuIsMU8RRBOtsCgI77wP899iHVBQpCmg4ErYMZB+2IA=
 github.com/spf13/afero v1.1.2/go.mod h1:j4pytiNVoe2o6bmDsKpLACNPDBIoEAkihy7loJ1B0CQ=
 github.com/spf13/afero v1.2.0/go.mod h1:9ZxEEn6pIJ8Rxe320qSDBk6AsU0r9pR7Q4OcevTdifk=
+github.com/spf13/afero v1.2.1/go.mod h1:9ZxEEn6pIJ8Rxe320qSDBk6AsU0r9pR7Q4OcevTdifk=
 github.com/spf13/cast v1.2.0/go.mod h1:r2rcYCSwa1IExKTDiTfzaxqT2FNHs8hODu4LnUfgKEg=
 github.com/spf13/cast v1.3.0/go.mod h1:Qx5cxh0v+4UWYiBimWS+eyWzqEqokIECu5etghLkUJE=
 github.com/spf13/cobra v0.0.3 h1:ZlrZ4XsMRm04Fr5pSFxBgfND2EBVa1nLpiy1stUsX/8=
@@ -615,6 +632,8 @@ golang.org/x/crypto v0.0.0-20190122013713-64072686203f/go.mod h1:6SG95UA2DQfeDnf
 golang.org/x/crypto v0.0.0-20190130090550-b01c7a725664/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
 golang.org/x/crypto v0.0.0-20190211182817-74369b46fc67 h1:ng3VDlRp5/DHpSWl02R4rM9I+8M2rhmsuLwAMmkLQWE=
 golang.org/x/crypto v0.0.0-20190211182817-74369b46fc67/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
+golang.org/x/crypto v0.0.0-20190219172222-a4c6cb3142f2 h1:NwxKRvbkH5MsNkvOtPZi3/3kmI8CAzs3mtv+GLQMkNo=
+golang.org/x/crypto v0.0.0-20190219172222-a4c6cb3142f2/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
 golang.org/x/exp v0.0.0-20190121172915-509febef88a4/go.mod h1:CJ0aWSM057203Lf6IL+f9T1iT9GByDxfZKAQTCR3kQA=
 golang.org/x/lint v0.0.0-20180702182130-06c8688daad7/go.mod h1:UVdnD1Gm6xHRNCYTkRU2/jEulfH38KcIWyp/GAMgvoE=
 golang.org/x/lint v0.0.0-20181026193005-c67002cb31c3/go.mod h1:UVdnD1Gm6xHRNCYTkRU2/jEulfH38KcIWyp/GAMgvoE=
@@ -684,6 +703,9 @@ golang.org/x/sys v0.0.0-20190122071731-054c452bb702 h1:Lk4tbZFnlyPgV+sLgTw5yGfzr
 golang.org/x/sys v0.0.0-20190122071731-054c452bb702/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
 golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a h1:1BGLXjeY4akVXGgbC9HugT3Jv3hCI0z56oJR5vAMgBU=
 golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
+golang.org/x/sys v0.0.0-20190219092855-153ac476189d/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
+golang.org/x/sys v0.0.0-20190220154126-629670e5acc5 h1:3Nsfe5Xa1wTt01QxlAFIY5j9ycDtS+d7mhvI8ZY5bn0=
+golang.org/x/sys v0.0.0-20190220154126-629670e5acc5/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
 golang.org/x/text v0.3.0 h1:g61tztE5qeGQ89tm6NTjjM9VPIm088od1l6aSorWRWg=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/text v0.3.1-0.20180807135948-17ff2d5776d2 h1:z99zHgr7hKfrUcX/KsoJk5FJfjTceCKIp96+biqP4To=
@@ -733,6 +755,10 @@ golang.org/x/tools v0.0.0-20190131142011-8dbcc66f33bb/go.mod h1:n7NCudcB/nEzxVGm
 golang.org/x/tools v0.0.0-20190206221403-44bcb96178d3/go.mod h1:n7NCudcB/nEzxVGmLbDWY5pfWTLqBcC2KZ6jyYvM4mQ=
 golang.org/x/tools v0.0.0-20190214204934-8dcb7bc8c7fe h1:oou9Na+8DBZO/hrVPAjBTaHXmuDq0284mwGwfmQ4ids=
 golang.org/x/tools v0.0.0-20190214204934-8dcb7bc8c7fe/go.mod h1:E6PF97AdD6v0s+fPshSmumCW1S1Ne85RbPQxELkKa44=
+golang.org/x/tools v0.0.0-20190219135230-f000d56b39dc/go.mod h1:E6PF97AdD6v0s+fPshSmumCW1S1Ne85RbPQxELkKa44=
+golang.org/x/tools v0.0.0-20190219185102-9394956cfdc5/go.mod h1:E6PF97AdD6v0s+fPshSmumCW1S1Ne85RbPQxELkKa44=
+golang.org/x/tools v0.0.0-20190220190617-97f80cd5504d h1:c7LLuMAYgBPaDC7+tYrCSMtjTYFZRQOtDBnVJ5sV79w=
+golang.org/x/tools v0.0.0-20190220190617-97f80cd5504d/go.mod h1:9Yl7xja0Znq3iFh3HoIrodX9oNMXvdceNzlUR8zjMvY=
 google.golang.org/api v0.0.0-20180910000450-7ca32eb868bf/go.mod h1:4mhQ8q/RsB7i+udVvVy5NUi08OU8ZlA0gRVgrF7VFY0=
 google.golang.org/api v0.0.0-20181030000543-1d582fd0359e/go.mod h1:4mhQ8q/RsB7i+udVvVy5NUi08OU8ZlA0gRVgrF7VFY0=
 google.golang.org/api v0.1.0/go.mod h1:UGEZY7KEX120AnNLIHFMKIo4obdJhkp2tPbaPlQx13Y=
