@@ -2,7 +2,7 @@ package newapp
 
 import (
 	"github.com/gobuffalo/genny"
-	"github.com/gobuffalo/genny/movinglater/gotools"
+	"github.com/gobuffalo/gogen"
 	"github.com/gobuffalo/packr/v2"
 	"github.com/gobuffalo/plush"
 	"github.com/gobuffalo/plushgen"
@@ -28,7 +28,7 @@ func New(opts *Options) (*genny.Group, error) {
 	g.Transformer(plushgen.Transformer(ctx))
 	g.Transformer(genny.Dot())
 
-	g.RunFn(gotools.Get("github.com/gobuffalo/pop"))
+	g.Command(gogen.Get("github.com/gobuffalo/pop"))
 
 	gg.Add(g)
 
