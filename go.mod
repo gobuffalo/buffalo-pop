@@ -11,7 +11,7 @@ require (
 	github.com/gobuffalo/httptest v1.1.0
 	github.com/gobuffalo/makr v1.1.5 // indirect
 	github.com/gobuffalo/meta v0.0.0-20190207205153-50a99e08b8cf
-	github.com/gobuffalo/packr/v2 v2.0.1
+	github.com/gobuffalo/packr/v2 v2.0.2
 	github.com/gobuffalo/plush v3.7.33+incompatible
 	github.com/gobuffalo/plushgen v0.0.0-20190224160205-347ea233336e
 	github.com/gobuffalo/pop v4.9.9+incompatible
