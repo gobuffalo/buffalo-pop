@@ -7,11 +7,12 @@ import (
 	"testing"
 	"time"
 
+	"errors"
+
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/httptest"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/uuid"
-	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 )
 
@@ -26,7 +27,7 @@ func tx(fn func(tx *pop.Connection)) error {
 	defer func() { pop.Debug = false }()
 	d, err := ioutil.TempDir("", "")
 	if err != nil {
-		return errors.WithStack(err)
+		return err
 	}
 	path := filepath.Join(d, "pt_test.sqlite")
 	defer os.RemoveAll(path)
@@ -36,10 +37,10 @@ func tx(fn func(tx *pop.Connection)) error {
 		URL:     path,
 	})
 	if err != nil {
-		return errors.WithStack(err)
+		return err
 	}
 	if err := db.Dialect.CreateDB(); err != nil {
-		return errors.WithStack(err)
+		return err
 	}
 	if err := db.Open(); err != nil {
 		return err

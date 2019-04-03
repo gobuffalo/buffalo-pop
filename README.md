@@ -41,7 +41,7 @@ func MyHandler(c buffalo.Context) error {
   // Get the DB connection from the context
   tx, ok := c.Value("tx").(*pop.Connection)
   if !ok {
-    return errors.WithStack(errors.New("no transaction found"))
+    return errors.New("no transaction found")
   }
 }
 ```

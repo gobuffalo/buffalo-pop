@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"strings"
 
+	"errors"
+
 	"github.com/gobuffalo/meta"
 	"github.com/gobuffalo/pop"
-	"github.com/pkg/errors"
 )
 
 type Options struct {

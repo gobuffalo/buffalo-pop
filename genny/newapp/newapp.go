@@ -8,7 +8,6 @@ import (
 	"github.com/gobuffalo/plushgen"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/pop/genny/config"
-	"github.com/pkg/errors"
 )
 
 var AvailableDialects = pop.AvailableDialects
@@ -17,7 +16,7 @@ func New(opts *Options) (*genny.Group, error) {
 	gg := &genny.Group{}
 
 	if err := opts.Validate(); err != nil {
-		return gg, errors.WithStack(err)
+		return gg, err
 	}
 
 	g := genny.New()
@@ -39,7 +38,7 @@ func New(opts *Options) (*genny.Group, error) {
 		Root:     opts.App.Root,
 	})
 	if err != nil {
-		return gg, errors.WithStack(err)
+		return gg, err
 	}
 	gg.Add(g)
 	return gg, nil
