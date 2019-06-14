@@ -9,8 +9,6 @@ Thank you to the following **GIANTS**:
 
 * [github.com/gobuffalo/buffalo](https://godoc.org/github.com/gobuffalo/buffalo)
 
-* [github.com/gobuffalo/buffalo-plugins](https://godoc.org/github.com/gobuffalo/buffalo-plugins)
-
 * [github.com/gobuffalo/events](https://godoc.org/github.com/gobuffalo/events)
 
 * [github.com/gobuffalo/flect](https://godoc.org/github.com/gobuffalo/flect)
@@ -20,6 +18,8 @@ Thank you to the following **GIANTS**:
 * [github.com/gobuffalo/gogen](https://godoc.org/github.com/gobuffalo/gogen)
 
 * [github.com/gobuffalo/httptest](https://godoc.org/github.com/gobuffalo/httptest)
+
+* [github.com/gobuffalo/makr](https://godoc.org/github.com/gobuffalo/makr)
 
 * [github.com/gobuffalo/meta](https://godoc.org/github.com/gobuffalo/meta)
 
@@ -40,8 +40,6 @@ Thank you to the following **GIANTS**:
 * [github.com/pkg/errors](https://godoc.org/github.com/pkg/errors)
 
 * [github.com/sirupsen/logrus](https://godoc.org/github.com/sirupsen/logrus)
-
-* [github.com/spf13/afero](https://godoc.org/github.com/spf13/afero)
 
 * [github.com/spf13/cobra](https://godoc.org/github.com/spf13/cobra)
 
