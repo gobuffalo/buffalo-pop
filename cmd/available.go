@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/gobuffalo/buffalo-plugins/plugins"
 	"github.com/gobuffalo/buffalo-pop/cmd/destroy"
+	"github.com/gobuffalo/buffalo/plugins"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/pop/logging"
 	"github.com/spf13/cobra"
