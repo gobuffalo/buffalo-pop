@@ -7,7 +7,7 @@ require (
 	github.com/gobuffalo/buffalo v0.14.6
 	github.com/gobuffalo/events v1.3.1
 	github.com/gobuffalo/flect v0.1.5
-	github.com/gobuffalo/genny v0.2.0
+	github.com/gobuffalo/genny v0.3.0
 	github.com/gobuffalo/gogen v0.2.0
 	github.com/gobuffalo/httptest v1.3.0
 	github.com/gobuffalo/makr v1.2.0 // indirect
