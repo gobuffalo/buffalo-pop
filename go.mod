@@ -5,7 +5,7 @@ go 1.12
 require (
 	github.com/fatih/color v1.7.0
 	github.com/gobuffalo/buffalo v0.14.6
-	github.com/gobuffalo/events v1.3.1
+	github.com/gobuffalo/events v1.4.0
 	github.com/gobuffalo/flect v0.1.5
 	github.com/gobuffalo/genny v0.3.0
 	github.com/gobuffalo/gogen v0.2.0
