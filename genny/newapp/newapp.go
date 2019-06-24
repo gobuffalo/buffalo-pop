@@ -2,10 +2,10 @@ package newapp
 
 import (
 	"github.com/gobuffalo/genny"
-	"github.com/gobuffalo/gogen"
+	"github.com/gobuffalo/genny/gogen"
+	"github.com/gobuffalo/genny/plushgen"
 	"github.com/gobuffalo/packr/v2"
 	"github.com/gobuffalo/plush"
-	"github.com/gobuffalo/plushgen"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/pop/genny/config"
 )
