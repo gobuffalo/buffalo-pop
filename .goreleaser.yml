@@ -9,13 +9,7 @@ builds:
     - windows
   env:
     - CGO_ENABLED=0
-  # main: ./main.go
-
-archive:
-  format: tar.gz
-  format_overrides:
-    - goos: windows
-      format: zip
+  main: main.go
 
 checksum:
   name_template: 'checksums.txt'
@@ -32,6 +26,6 @@ changelog:
 
 brew:
   github:
-    owner: gobuffalo
+    owner: markbates
     name: homebrew-tap
 
