@@ -1,5 +1,7 @@
 module github.com/gobuffalo/buffalo-pop
 
+go 1.12
+
 require (
 	github.com/cockroachdb/apd v1.1.0 // indirect
 	github.com/cockroachdb/cockroach-go v0.0.0-20181001143604-e0a95dfd547c // indirect
