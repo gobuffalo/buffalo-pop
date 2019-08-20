@@ -8,6 +8,7 @@ dmitri.shuralyov.com/state v0.0.0-20180228185332-28bcc343414c/go.mod h1:0PRwlb0D
 git.apache.org/thrift.git v0.0.0-20180902110319-2566ecd5d999/go.mod h1:fPE2ZNJGynbRyZ4dJvy6G277gSllfV2HJqblrnkyeyg=
 github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
+github.com/Masterminds/semver v1.4.2 h1:WBLTQ37jOCzSLtXNdoo8bNM8876KhNqOKvrlGITgsTc=
 github.com/Masterminds/semver v1.4.2/go.mod h1:MB6lktGJrhw8PrUyiEoblNEGEQ+RzHPF078ddwwvV3Y=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
 github.com/ajg/form v0.0.0-20160822230020-523a5da1a92f/go.mod h1:uL1WgH+h2mgNtvBq0339dVnzXdBETtL2LeUXaIv25UY=
@@ -278,6 +279,7 @@ github.com/gobuffalo/licenser v0.0.0-20181211173111-f8a311c51159/go.mod h1:ve/Ue
 github.com/gobuffalo/licenser v0.0.0-20190224205124-37799bc2ebf6/go.mod h1:ve/Ue99DRuvnTaLq2zKa6F4KtHiYf7W046tDjuGYPfM=
 github.com/gobuffalo/licenser v0.0.0-20190329153211-c35c0a2813b2/go.mod h1:ZVWE6uKUE3rGf7sedUHWVjNWrEgxaUQLVFL+pQiWpfY=
 github.com/gobuffalo/licenser v1.1.0/go.mod h1:ZVWE6uKUE3rGf7sedUHWVjNWrEgxaUQLVFL+pQiWpfY=
+github.com/gobuffalo/licenser v1.2.0 h1:nHodbRRk7aO44QqSGCxoSuazdJWOr9pr4txNuhmzbng=
 github.com/gobuffalo/licenser v1.2.0/go.mod h1:ZqDQ+UOqsXPovl65rbCr3Tye6+nKjT4ovwurjVxvMQM=
 github.com/gobuffalo/logger v0.0.0-20181022175615-46cfb361fc27/go.mod h1:8sQkgyhWipz1mIctHF4jTxmJh1Vxhp7mP8IqbljgJZo=
 github.com/gobuffalo/logger v0.0.0-20181027144941-73d08d2bb969/go.mod h1:7uGg2duHKpWnN4+YmyKBdLXfhopkAdVM6H3nKbyFbz8=
@@ -449,10 +451,12 @@ github.com/gobuffalo/release v1.2.2/go.mod h1:tkFFZua2N5WRxyGDk2cSwQjzkZ/apKKXl5
 github.com/gobuffalo/release v1.2.5/go.mod h1:tkFFZua2N5WRxyGDk2cSwQjzkZ/apKKXl5T8P+kEO+E=
 github.com/gobuffalo/release v1.4.0/go.mod h1:f4uUPnD9dxrWxVy9yy0k/mvDf3EzhFtf7/byl0tTdY4=
 github.com/gobuffalo/release v1.7.0/go.mod h1:xH2NjAueVSY89XgC4qx24ojEQ4zQ9XCGVs5eXwJTkEs=
+github.com/gobuffalo/release v1.8.3 h1:xqTWefcJ+yEfd37VsuUPnupIxJhK4t1DYtK8U8UG1vM=
 github.com/gobuffalo/release v1.8.3/go.mod h1:gCk/x5WD+aIGkPodO4CuLxdnhYn9Jgp7yFYxntK/8mk=
 github.com/gobuffalo/shoulders v1.0.1/go.mod h1:V33CcVmaQ4gRUmHKwq1fiTXuf8Gp/qjQBUL5tHPmvbA=
 github.com/gobuffalo/shoulders v1.0.3/go.mod h1:LqMcHhKRuBPMAYElqOe3POHiZ1x7Ry0BE8ZZ84Bx+k4=
 github.com/gobuffalo/shoulders v1.0.4/go.mod h1:LqMcHhKRuBPMAYElqOe3POHiZ1x7Ry0BE8ZZ84Bx+k4=
+github.com/gobuffalo/shoulders v1.1.0 h1:nzhFIkpYmWPYF3sxtw3KQ5z7l1QIM3tLApyk+TL2HH0=
 github.com/gobuffalo/shoulders v1.1.0/go.mod h1:kcIJs3p7VqoBJ36Mzs+x767NyzTx0pxBvzZdWTWZYF8=
 github.com/gobuffalo/syncx v0.0.0-20181120191700-98333ab04150/go.mod h1:HhnNqWY95UYwwW3uSASeV7vtgYkT2t16hJgV3AEPUpw=
 github.com/gobuffalo/syncx v0.0.0-20181120194010-558ac7de985f/go.mod h1:HhnNqWY95UYwwW3uSASeV7vtgYkT2t16hJgV3AEPUpw=
@@ -571,6 +575,7 @@ github.com/markbates/deplist v1.0.4/go.mod h1:gRRbPbbuA8TmMiRvaOzUlRfzfjeCCBqX2A
 github.com/markbates/deplist v1.0.5/go.mod h1:gRRbPbbuA8TmMiRvaOzUlRfzfjeCCBqX2A6arxN01MM=
 github.com/markbates/deplist v1.1.3/go.mod h1:BF7ioVzAJYEtzQN/os4rt8H8Ti3h0T7EoN+7eyALktE=
 github.com/markbates/deplist v1.2.0/go.mod h1:dtsWLZ5bWoazbM0rCxZncQaAPifWbvHgBJk8UNI1Yfk=
+github.com/markbates/deplist v1.3.0 h1:uPgoloPraPBPYtNSxj2UwZBh2EHW9TmMvQCP2FBiRlU=
 github.com/markbates/deplist v1.3.0/go.mod h1:dtsWLZ5bWoazbM0rCxZncQaAPifWbvHgBJk8UNI1Yfk=
 github.com/markbates/going v1.0.2/go.mod h1:UWCk3zm0UKefHZ7l8BNqi26UyiEMniznk8naLdTcy6c=
 github.com/markbates/going v1.0.3/go.mod h1:fQiT6v6yQar9UD6bd/D4Z5Afbk9J6BBVBtLiyY4gp2o=
