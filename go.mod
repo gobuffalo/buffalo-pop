@@ -15,7 +15,7 @@ require (
 	github.com/gobuffalo/packr/v2 v2.5.2
 	github.com/gobuffalo/plush v3.8.3+incompatible
 	github.com/gobuffalo/pop v4.11.3+incompatible
-	github.com/gobuffalo/uuid v2.0.5+incompatible
+	github.com/gofrs/uuid v3.2.0+incompatible
 	github.com/jackc/fake v0.0.0-20150926172116-812a484cc733 // indirect
 	github.com/jackc/pgx v3.5.0+incompatible // indirect
 	github.com/pkg/errors v0.8.1
