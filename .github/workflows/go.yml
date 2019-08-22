@@ -1,0 +1,34 @@
+name: Go
+on: [push, pull_request]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+        go: [1.11, 1.12]
+    steps:
+
+    - name: Set up Go ${{ matrix.go }}
+      uses: actions/setup-go@v1
+      with:
+        go-version: ${{ matrix.go }}
+      id: go
+
+    - name: Check out code into the Go module directory
+      uses: actions/checkout@v1
+
+    - name: Get dependencies
+      run: |
+        go get -v -tags sqlite -t -d ./...
+      env:
+        GO111MODULE: "on"
+        GOPROXY: "https://proxy.golang.org"
+
+    - name: Test
+      run: go test -tags sqlite -race ./...
+      env:
+        GO111MODULE: "on"
+        GOPROXY: "https://proxy.golang.org"
