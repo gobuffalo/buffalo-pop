@@ -1,9 +1,8 @@
 name: Go
 on:
-  push:
+  pull_request:
     branches:
     - master
-    - refs/pull/*
 jobs:
 
   build:
