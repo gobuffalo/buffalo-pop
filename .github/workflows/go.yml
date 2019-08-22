@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macOS-latest, windows-latest]
-        go: [1.11, 1.12]
+        go: ["1.11", "1.12"]
     steps:
 
     - name: Set up Go ${{ matrix.go }}
