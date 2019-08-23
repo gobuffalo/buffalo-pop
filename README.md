@@ -2,7 +2,6 @@
 
 <p align="center">
 <a href="https://godoc.org/github.com/gobuffalo/buffalo-pop"><img src="https://godoc.org/github.com/gobuffalo/buffalo-pop?status.svg" alt="GoDoc" /></a>
-<a href="https://travis-ci.org/gobuffalo/buffalo-pop"><img src="https://travis-ci.org/gobuffalo/buffalo-pop.svg?branch=master" alt="Build Status" /></a>
 <a href="https://goreportcard.com/report/github.com/gobuffalo/buffalo-pop"><img src="https://goreportcard.com/badge/github.com/gobuffalo/buffalo-pop" alt="Go Report Card" /></a>
 </p>
 
@@ -14,6 +13,12 @@ This is the home for all things that combine [Buffalo](https://github.com/gobuff
 
 ```bash
 $ go get -u -v github.com/gobuffalo/buffalo-pop
+```
+
+Or with SQLite 3 support:
+
+```bash
+$ go get -tags sqlite -u -v github.com/gobuffalo/buffalo-pop
 ```
 
 ## Transaction Middleware
