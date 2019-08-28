@@ -12,7 +12,7 @@ require (
 	github.com/gobuffalo/meta v0.1.0
 	github.com/gobuffalo/packr/v2 v2.6.0
 	github.com/gobuffalo/plush v3.8.3+incompatible
-	github.com/gobuffalo/pop v4.11.5+incompatible
+	github.com/gobuffalo/pop v4.11.6+incompatible
 	github.com/gofrs/uuid v3.2.0+incompatible
 	github.com/pkg/errors v0.8.1
 	github.com/sirupsen/logrus v1.4.2
