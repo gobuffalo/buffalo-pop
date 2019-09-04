@@ -12,7 +12,7 @@ before:
     - go mod download
 
 builds:
-- id: buffalo_pop_darwin
+-
   goos:
     - darwin
   goarch:
@@ -25,7 +25,7 @@ builds:
     - -tags
     - sqlite
 
-- id: buffalo_pop_linux
+-
   goos:
     - linux
   goarch:
@@ -37,7 +37,7 @@ builds:
     - -tags
     - sqlite
 
-- id: buffalo_pop_windows_i686
+- 
   goos:
     - windows
   goarch:
@@ -52,7 +52,7 @@ builds:
     - -tags
     - sqlite
 
-- id: buffalo_pop_windows_x64
+- 
   goos:
     - windows
   goarch:
@@ -93,4 +93,3 @@ brews:
       name: homebrew-tap
     description: "Buffalo plugin to work with gobuffalo/pop"
     skip_upload: "auto"
-
