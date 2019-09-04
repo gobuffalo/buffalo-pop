@@ -48,7 +48,7 @@ endif
 	make tidy
 
 release-test: packr
-	$(GO_BIN) test -tags ${TAGS} -race ./...
+	$(GO_BIN) test -tags ${TAGS} ./...
 	make tidy
 
 release:

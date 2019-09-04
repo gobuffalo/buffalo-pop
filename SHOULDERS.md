@@ -5,10 +5,6 @@ github.com/gobuffalo/buffalo-pop does not try to reinvent the wheel! Instead, it
 Thank you to the following **GIANTS**:
 
 
-* [github.com/cockroachdb/apd](https://godoc.org/github.com/cockroachdb/apd)
-
-* [github.com/cockroachdb/cockroach-go](https://godoc.org/github.com/cockroachdb/cockroach-go)
-
 * [github.com/fatih/color](https://godoc.org/github.com/fatih/color)
 
 * [github.com/gobuffalo/buffalo](https://godoc.org/github.com/gobuffalo/buffalo)
@@ -31,15 +27,7 @@ Thank you to the following **GIANTS**:
 
 * [github.com/gofrs/uuid](https://godoc.org/github.com/gofrs/uuid)
 
-* [github.com/jackc/fake](https://godoc.org/github.com/jackc/fake)
-
-* [github.com/jackc/pgx](https://godoc.org/github.com/jackc/pgx)
-
 * [github.com/pkg/errors](https://godoc.org/github.com/pkg/errors)
-
-* [github.com/satori/go.uuid](https://godoc.org/github.com/satori/go.uuid)
-
-* [github.com/shopspring/decimal](https://godoc.org/github.com/shopspring/decimal)
 
 * [github.com/sirupsen/logrus](https://godoc.org/github.com/sirupsen/logrus)
 
