@@ -1,13 +1,12 @@
 package popmw
 
 import (
+	"fmt"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 	"testing"
 	"time"
-
-	"errors"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/httptest"
@@ -77,7 +76,7 @@ func app(db *pop.Connection) *buffalo.App {
 		if err := tx.Create(w); err != nil {
 			return err
 		}
-		return errors.New("boom")
+		return fmt.Errorf("boom")
 	})
 	return app
 }

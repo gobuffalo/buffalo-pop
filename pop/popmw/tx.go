@@ -3,6 +3,7 @@ package popmw
 import (
 	"time"
 
+	"github.com/gobuffalo/buffalo-pop/internal/takeon/github.com/markbates/errx"
 	"github.com/pkg/errors"
 
 	"github.com/gobuffalo/buffalo"
@@ -70,7 +71,7 @@ func Transaction(db *pop.Connection) buffalo.MiddlewareFunc {
 			// * yourError - an error returned from your application, middleware, etc...
 			// * a database error - this is returned if there were problems committing the transaction
 			// * a errNonSuccess - this is returned if the response status code is not between 200..399
-			if couldBeDBorYourErr != nil && errors.Cause(couldBeDBorYourErr) != errNonSuccess {
+			if couldBeDBorYourErr != nil && errx.Unwrap(couldBeDBorYourErr) != errNonSuccess {
 				return couldBeDBorYourErr
 			}
 			return nil
