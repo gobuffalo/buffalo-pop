@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"strings"
 
-	"errors"
-
 	"github.com/gobuffalo/meta"
 	"github.com/gobuffalo/pop"
 )
@@ -18,7 +16,7 @@ type Options struct {
 
 func (opts *Options) Validate() error {
 	if opts.Prefix == "" {
-		return errors.New("you must provide a database name prefix")
+		return fmt.Errorf("you must provide a database name prefix")
 	}
 	if opts.App.IsZero() {
 		opts.App = meta.New(".")

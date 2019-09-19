@@ -2,7 +2,6 @@ package destroy
 
 import (
 	"bufio"
-	"errors"
 	"fmt"
 	"io/ioutil"
 	"os"
@@ -21,7 +20,7 @@ var ModelCmd = &cobra.Command{
 	Short:   "Destroys model files.",
 	RunE: func(cmd *cobra.Command, args []string) error {
 		if len(args) == 0 {
-			return errors.New("you need to provide a valid model name in order to destroy it")
+			return fmt.Errorf("you need to provide a valid model name in order to destroy it")
 		}
 
 		name := args[0]
