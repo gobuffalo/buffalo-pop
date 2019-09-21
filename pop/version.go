@@ -1,4 +1,4 @@
 package pop
 
 // Version is the current pop version (not the buffalo-pop one).
-const Version = "v4.11.6"
+const Version = "v4.12.0"

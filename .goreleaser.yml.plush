@@ -1,21 +1,74 @@
+project_name: buffalo-pop
+
+env:
+  - GO111MODULE=on
+  - GOPROXY=https://proxy.golang.org
+
+before:
+  hooks:
+    - go mod download
+
 builds:
 -
   goos:
     - darwin
+  goarch:
+    - amd64
+  env:
+    - CGO_ENABLED=1
+    - CC=o64-clang
+    - CXX=o64-clang++
+  flags:
+    - -tags
+    - sqlite
+
+-
+  goos:
     - linux
-    - windows
   goarch:
     - amd64
     - 386
-    - arm
-    - arm64
-  goarm:
-    - 6
-    - 7
   env:
-    - CGO_ENABLED=0
-  main: ./main.go
-  binary: buffalo-pop
+    - CGO_ENABLED=1
+  flags:
+    - -tags
+    - sqlite
+
+- 
+  goos:
+    - windows
+  goarch:
+    - 386
+  ldflags:
+    - "-extldflags '-static'"
+  env:
+    - CGO_ENABLED=1
+    - CC=i686-w64-mingw32-gcc
+    - CXX=i686-w64-mingw32-g++
+  flags:
+    - -tags
+    - sqlite
+
+- 
+  goos:
+    - windows
+  goarch:
+    - amd64
+  ldflags:
+    - "-extldflags '-static'"
+  env:
+    - CGO_ENABLED=1
+    - CC=x86_64-w64-mingw32-gcc
+    - CXX=x86_64-w64-mingw32-g++
+  flags:
+    - -tags
+    - sqlite
+
+archives:
+  -
+    format_overrides:
+      - goos: windows
+        format: zip
 
 checksum:
   name_template: 'checksums.txt'
@@ -27,18 +80,14 @@ changelog:
   sort: asc
   filters:
     exclude:
-    - '^docs:'
-    - '^test:'
+      - '^docs:'
+      - '^test:'
 <%= if (brew) { %>
-brew:
-  name: buffalo
-  github:
-    owner: gobuffalo
-    name: homebrew-tap
-  homepage: https://gobuffalo.io
-  description: A Go web development eco-system, designed to make your life easier.
-  install: |
-    bin.install "buffalo-pop"
-  test: |
-    system "#{bin}/buffalo-pop", "version"
+brews:
+  -
+    github:
+      owner: gobuffalo
+      name: homebrew-tap
+    description: "Buffalo plugin to work with gobuffalo/pop"
+    skip_upload: "auto"
 <% } %>
