@@ -9,7 +9,7 @@ import (
 	"github.com/gobuffalo/buffalo"
 	pp "github.com/gobuffalo/buffalo-pop/pop"
 	"github.com/gobuffalo/events"
-	"github.com/gobuffalo/pop"
+	"github.com/gobuffalo/pop/v5"
 )
 
 // PopTransaction is a piece of Buffalo middleware that wraps each

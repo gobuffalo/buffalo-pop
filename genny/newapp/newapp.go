@@ -6,8 +6,8 @@ import (
 	"github.com/gobuffalo/genny/plushgen"
 	"github.com/gobuffalo/packr/v2"
 	"github.com/gobuffalo/plush"
-	"github.com/gobuffalo/pop"
-	"github.com/gobuffalo/pop/genny/config"
+	"github.com/gobuffalo/pop/v5"
+	"github.com/gobuffalo/pop/v5/genny/config"
 )
 
 var AvailableDialects = pop.AvailableDialects
@@ -27,7 +27,7 @@ func New(opts *Options) (*genny.Group, error) {
 	g.Transformer(plushgen.Transformer(ctx))
 	g.Transformer(genny.Dot())
 
-	g.Command(gogen.Get("github.com/gobuffalo/pop"))
+	g.Command(gogen.Get("github.com/gobuffalo/pop/v5"))
 
 	gg.Add(g)
 

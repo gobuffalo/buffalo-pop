@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/gobuffalo/pop/soda/cmd"
+	"github.com/gobuffalo/pop/v5/soda/cmd"
 )
 
 // popCmd represents the pop command

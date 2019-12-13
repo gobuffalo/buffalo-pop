@@ -6,8 +6,8 @@ import (
 
 	"github.com/gobuffalo/buffalo-pop/cmd/destroy"
 	"github.com/gobuffalo/buffalo/plugins"
-	"github.com/gobuffalo/pop"
-	"github.com/gobuffalo/pop/logging"
+	"github.com/gobuffalo/pop/v5"
+	"github.com/gobuffalo/pop/v5/logging"
 	"github.com/spf13/cobra"
 )
 
