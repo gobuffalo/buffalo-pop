@@ -1,4 +1,4 @@
-module github.com/gobuffalo/buffalo-pop
+module github.com/gobuffalo/buffalo-pop/v2
 
 go 1.13
 

@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/gobuffalo/buffalo-pop/pop"
+	"github.com/gobuffalo/buffalo-pop/v2/pop"
 	"github.com/spf13/cobra"
 )
 

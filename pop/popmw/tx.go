@@ -3,11 +3,11 @@ package popmw
 import (
 	"time"
 
-	"github.com/gobuffalo/buffalo-pop/internal/takeon/github.com/markbates/errx"
+	"github.com/gobuffalo/buffalo-pop/v2/internal/takeon/github.com/markbates/errx"
 	"github.com/pkg/errors"
 
 	"github.com/gobuffalo/buffalo"
-	pp "github.com/gobuffalo/buffalo-pop/pop"
+	pp "github.com/gobuffalo/buffalo-pop/v2/pop"
 	"github.com/gobuffalo/events"
 	"github.com/gobuffalo/pop/v5"
 )

@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/gobuffalo/buffalo-pop/cmd/destroy"
+	"github.com/gobuffalo/buffalo-pop/v2/cmd/destroy"
 	"github.com/spf13/cobra"
 )
 
