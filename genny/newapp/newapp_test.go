@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/gobuffalo/genny/gentest"
+	"github.com/gobuffalo/genny/v2/gentest"
 	"github.com/gobuffalo/pop/v5"
 	"github.com/stretchr/testify/require"
 )
@@ -25,7 +25,7 @@ func Test_New(t *testing.T) {
 			r.NoError(run.Run())
 
 			res := run.Results()
-			r.Len(res.Commands, 1)
+			r.Len(res.Commands, 0)
 			r.Len(res.Files, 4)
 			return nil
 		})
