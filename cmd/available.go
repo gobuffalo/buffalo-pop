@@ -5,7 +5,6 @@ import (
 	"os"
 
 	"github.com/gobuffalo/buffalo-pop/v2/cmd/destroy"
-	"github.com/gobuffalo/buffalo/plugins"
 	"github.com/gobuffalo/pop/v5"
 	"github.com/gobuffalo/pop/v5/logging"
 	"github.com/spf13/cobra"
@@ -22,7 +21,7 @@ var availableCmd = &cobra.Command{
 		return nil
 	},
 	RunE: func(cmd *cobra.Command, args []string) error {
-		plugs := plugins.Commands{
+		plugs := Commands{
 			{Name: "db", BuffaloCommand: "root", Description: "[DEPRECATED] please use `buffalo pop` instead.", Aliases: popCmd.Aliases},
 			{Name: "pop", BuffaloCommand: "root", Description: popCmd.Short, Aliases: popCmd.Aliases},
 			{Name: "model", BuffaloCommand: "destroy", Description: destroy.ModelCmd.Short, Aliases: destroy.ModelCmd.Aliases},
@@ -34,3 +33,23 @@ var availableCmd = &cobra.Command{
 func init() {
 	rootCmd.AddCommand(availableCmd)
 }
+
+// Command that the plugin supplies
+type Command struct {
+	// Name "foo"
+	Name string `json:"name"`
+	// UseCommand "bar"
+	UseCommand string `json:"use_command"`
+	// BuffaloCommand "generate"
+	BuffaloCommand string `json:"buffalo_command"`
+	// Description "generates a foo"
+	Description string   `json:"description,omitempty"`
+	Aliases     []string `json:"aliases,omitempty"`
+	Binary      string   `json:"-"`
+	Flags       []string `json:"flags,omitempty"`
+	// Filters events to listen to ("" or "*") is all events
+	ListenFor string `json:"listen_for,omitempty"`
+}
+
+// Commands is a slice of Command
+type Commands []Command
