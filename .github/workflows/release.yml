@@ -1,28 +1,26 @@
 name: Release
 on:
-  release:
-    types:
-      - published
+  create:
+    tags:
+      - v*.*.*
 
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    container:
+      image: bepsays/ci-goreleaser:1.13-4
     steps:
-      -
-        name: Set up Go 1.13
-        uses: actions/setup-go@v1
-        with:
-          go-version: 1.13
-        id: go
-      -
-        name: Checkout Code
+      - name: Checkout Code
         uses: actions/checkout@master
-      -
-        name: Run GoReleaser
+        with:
+          fetch-depth: 0
+      - name: Fetch tags
+        run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+      - name: Run GoReleaser
+        uses: goreleaser/goreleaser-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GORELEASER_GITHUB_TOKEN }}
-        uses: goreleaser/goreleaser-action@v1
         with:
           version: latest
           args: release --rm-dist
