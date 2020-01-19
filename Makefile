@@ -1,7 +1,6 @@
 test:
 	packr2 clean
 	go test -tags sqlite -failfast -short -cover ./...
-	cd ./pop && go test -tags sqlite -failfast -short -cover ./...
 	packr2
 	go mod tidy -v
 
