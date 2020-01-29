@@ -3,8 +3,9 @@ package newapp
 import (
 	"github.com/gobuffalo/genny/v2"
 	"github.com/gobuffalo/genny/v2/plushgen"
+	"github.com/gobuffalo/here"
 	"github.com/gobuffalo/packr/v2"
-	"github.com/gobuffalo/plush"
+	"github.com/gobuffalo/plush/v4"
 	"github.com/gobuffalo/pop/v5"
 	"github.com/gobuffalo/pop/v5/genny/config"
 )
@@ -28,11 +29,16 @@ func New(opts *Options) (*genny.Group, error) {
 
 	gg.Add(g)
 
-	g, err := config.New(&config.Options{
+	info, err := here.Current()
+	if err != nil {
+		return nil, err
+	}
+
+	g, err = config.New(&config.Options{
 		Dialect:  opts.Dialect,
 		Prefix:   opts.Prefix,
 		FileName: "database.yml",
-		Root:     opts.App.Root,
+		Root:     info.Dir,
 	})
 	if err != nil {
 		return gg, err
