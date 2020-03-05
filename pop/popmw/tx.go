@@ -57,7 +57,7 @@ func Transaction(db *pop.Connection) buffalo.MiddlewareFunc {
 				// check the response status code. if the code is NOT 200..399
 				// then it is considered "NOT SUCCESSFUL" and an error will be returned
 				if res, ok := c.Response().(*buffalo.Response); ok {
-					if res.Status < 200 || res.Status >= 400 {
+					if res.Status != 0 && (res.Status < 200 || res.Status >= 400) {
 						return errNonSuccess
 					}
 				}

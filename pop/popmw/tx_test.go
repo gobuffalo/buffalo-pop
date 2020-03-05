@@ -62,6 +62,14 @@ func app(db *pop.Connection) *buffalo.App {
 		}
 		return c.Render(201, nil)
 	})
+	app.GET("/success-implicit", func(c buffalo.Context) error {
+		w := &widget{}
+		tx := c.Value("tx").(*pop.Connection)
+		if err := tx.Create(w); err != nil {
+			return err
+		}
+		return nil
+	})
 	app.GET("/non-success", func(c buffalo.Context) error {
 		w := &widget{}
 		tx := c.Value("tx").(*pop.Connection)
@@ -87,6 +95,19 @@ func Test_PopTransaction(t *testing.T) {
 		w := httptest.New(app(db))
 		res := w.HTML("/success").Get()
 		r.Equal(201, res.Code)
+		count, err := db.Count("widgets")
+		r.NoError(err)
+		r.Equal(1, count)
+	})
+	r.NoError(err)
+}
+
+func Test_PopTransactionImplicit(t *testing.T) {
+	r := require.New(t)
+	err := tx(func(db *pop.Connection) {
+		w := httptest.New(app(db))
+		res := w.HTML("/success-implicit").Get()
+		r.Equal(200, res.Code)
 		count, err := db.Count("widgets")
 		r.NoError(err)
 		r.Equal(1, count)
