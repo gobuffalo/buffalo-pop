@@ -2,12 +2,14 @@ package newapp
 
 import (
 	"fmt"
+	"os"
 	"strings"
 
 	"github.com/gobuffalo/pop/v5"
 )
 
 type Options struct {
+	Root    string
 	Dialect string
 	Prefix  string
 }
@@ -15,6 +17,14 @@ type Options struct {
 func (opts *Options) Validate() error {
 	if opts.Prefix == "" {
 		return fmt.Errorf("you must provide a database name prefix")
+	}
+
+	if len(opts.Root) == 0 {
+		pwd, err := os.Getwd()
+		if err != nil {
+			return err
+		}
+		opts.Root = pwd
 	}
 
 	if len(opts.Dialect) == 0 {
