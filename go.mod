@@ -11,7 +11,7 @@ require (
 	github.com/gobuffalo/httptest v1.5.0
 	github.com/gobuffalo/packr/v2 v2.8.0
 	github.com/gobuffalo/plush/v4 v4.0.0
-	github.com/gobuffalo/pop/v5 v5.0.9
+	github.com/gobuffalo/pop/v5 v5.0.11
 	github.com/gofrs/uuid v3.2.0+incompatible
 	github.com/markbates/errx v1.1.0
 	github.com/pkg/errors v0.9.1
