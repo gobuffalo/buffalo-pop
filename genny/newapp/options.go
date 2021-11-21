@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/gobuffalo/pop/v5"
+	"github.com/gobuffalo/pop/v6"
 )
 
 type Options struct {

@@ -5,9 +5,9 @@ import (
 	"time"
 
 	"github.com/gobuffalo/buffalo"
-	pp "github.com/gobuffalo/buffalo-pop/v2/pop"
+	pp "github.com/gobuffalo/buffalo-pop/v3/pop"
 	"github.com/gobuffalo/events"
-	"github.com/gobuffalo/pop/v5"
+	"github.com/gobuffalo/pop/v6"
 )
 
 // PopTransaction is a piece of Buffalo middleware that wraps each
