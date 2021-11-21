@@ -19,5 +19,5 @@ require (
 
 replace (
 	github.com/gobuffalo/buffalo v0.17.5 => github.com/fasmat/buffalo v0.16.15-0.20211121153216-deb763ccd343
-	github.com/gobuffalo/pop/v6 v6.0.0 => github.com/fasmat/pop/v6 v6.0.0-20211121152713-e467c63e98c0
+	github.com/gobuffalo/pop/v6 v6.0.0 => github.com/fasmat/pop/v6 v6.0.0-20211121171247-7e62da123029
 )
