@@ -20,7 +20,7 @@ jobs:
       
       - name: GCC multilib
         run: |
-          sudo apt-get install gcc-multilib g++-multilib
+          sudo apt-get install gcc-multilib g++-multilib clang-11 --install-suggests
       
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v2
