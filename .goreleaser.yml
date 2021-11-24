@@ -18,12 +18,7 @@ builds:
   goarch:
     - amd64
   env:
-    - CGO_ENABLED=1
-    - CC=o64-clang
-    - CXX=o64-clang++
-  flags:
-    - -tags
-    - sqlite
+    - CGO_ENABLED=0
 
 - id: buffalo_pop_linux
   goos:
@@ -32,10 +27,7 @@ builds:
     - amd64
     - 386
   env:
-    - CGO_ENABLED=1
-  flags:
-    - -tags
-    - sqlite
+    - CGO_ENABLED=0
 
 - id: buffalo_pop_windows_i686
   goos:
@@ -45,13 +37,8 @@ builds:
   ldflags:
     - "-extldflags '-static'"
   env:
-    - CGO_ENABLED=1
-    - CC=i686-w64-mingw32-gcc
-    - CXX=i686-w64-mingw32-g++
-  flags:
-    - -tags
-    - sqlite
-
+    - CGO_ENABLED=0
+  
 - id: buffalo_pop_windows_x64
   goos:
     - windows
@@ -60,12 +47,7 @@ builds:
   ldflags:
     - "-extldflags '-static'"
   env:
-    - CGO_ENABLED=1
-    - CC=x86_64-w64-mingw32-gcc
-    - CXX=x86_64-w64-mingw32-g++
-  flags:
-    - -tags
-    - sqlite
+    - CGO_ENABLED=0
 
 archives:
   -
