@@ -88,7 +88,7 @@ changelog:
 
 brews:
   -
-    github:
+    tap:
       owner: gobuffalo
       name: homebrew-tap
     description: "Buffalo plugin to work with gobuffalo/pop"
