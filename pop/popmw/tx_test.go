@@ -10,7 +10,7 @@ import (
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/httptest"
-	"github.com/gobuffalo/pop/v5"
+	"github.com/gobuffalo/pop/v6"
 	"github.com/gofrs/uuid"
 	"github.com/stretchr/testify/require"
 )

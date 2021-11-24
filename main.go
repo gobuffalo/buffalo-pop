@@ -1,8 +1,6 @@
 package main
 
-import "github.com/gobuffalo/buffalo-pop/v2/cmd"
-
-//go:generate packr2
+import "github.com/gobuffalo/buffalo-pop/v3/cmd"
 
 func main() {
 	cmd.Execute()

@@ -12,13 +12,13 @@ This is the home for all things that combine [Buffalo](https://github.com/gobuff
 ## Installation
 
 ```bash
-$ go get -u -v github.com/gobuffalo/buffalo-pop/v2
+go install github.com/gobuffalo/buffalo-pop/v3@latest
 ```
 
 Or with SQLite 3 support:
 
 ```bash
-$ go get -tags sqlite -u -v github.com/gobuffalo/buffalo-pop/v2
+go get -tags sqlite -v github.com/gobuffalo/buffalo-pop/v3
 ```
 
 ## Transaction Middleware
@@ -30,7 +30,7 @@ The `popmw.Transaction` will wrap each request inside of a new database transact
 First you need to add the middleware to your application giving it access to your `*pop.Connection`, typically found at `models.DB`.
 
 ```go
-import "github.com/gobuffalo/buffalo-pop/v2/pop/popmw"
+import "github.com/gobuffalo/buffalo-pop/v3/pop/popmw"
 
 func App() *buffalo.App {
   // ...
