@@ -11,7 +11,7 @@ require (
 	github.com/gobuffalo/httptest v1.5.1
 	github.com/gobuffalo/plush/v4 v4.1.9
 	github.com/gobuffalo/pop/v6 v6.0.0
-	github.com/gofrs/uuid v4.1.0+incompatible
+	github.com/gofrs/uuid v4.2.0+incompatible
 	github.com/sirupsen/logrus v1.8.1
 	github.com/spf13/cobra v1.2.1
 	github.com/stretchr/testify v1.7.0
