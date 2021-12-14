@@ -18,9 +18,10 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       
-      - name: GCC multilib
+      - name: OSXCross for CGO Support
         run: |
-          sudo apt-get install gcc-multilib g++-multilib clang-11 --install-suggests
+          mkdir ../plenti-osxcross
+          git clone https://github.com/plentico/plenti-osxcross.git ../plenti-osxcross/target
       
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v2

@@ -18,7 +18,9 @@ builds:
   goarch:
     - amd64
   env:
-    - CGO_ENABLED=0
+    - CGO_ENABLED=1
+    - CC=/home/runner/work/osxcross/target/bin/o64-clang
+    - CXX=/home/runner/work/osxcross/target/bin/o64-clang++ 
 
 - id: buffalo_pop_linux
   goos:
