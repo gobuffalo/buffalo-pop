@@ -18,6 +18,10 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       
+      - name: GCC multilib
+        run: |
+          sudo apt-get install gcc-multilib g++-multilib
+      
       - name: OSXCross for CGO Support
         run: |
           mkdir ../../osxcross
