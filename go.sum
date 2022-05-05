@@ -104,8 +104,8 @@ github.com/go-sql-driver/mysql v1.6.0/go.mod h1:DCzpHaOWr8IXmIStZouvnhqoel9Qv2LB
 github.com/go-stack/stack v1.8.0/go.mod h1:v0f6uXyyMGvRgIKkXu+yp6POWl0qKG85gN/melR3HDY=
 github.com/gobuffalo/attrs v1.0.1 h1:Z84c0uuGKg58mhcLQODAqE/Sbxg8GgwjvV9nekZPs5c=
 github.com/gobuffalo/attrs v1.0.1/go.mod h1:qGdnq2RukKtBl4ASJit0OFckc5XGSyTFk98SvRpMFrQ=
-github.com/gobuffalo/buffalo v0.18.6 h1:a8gkePu8nwba1yAjpoNgwfbyhLk5SC+2ELL0YAMl2Mo=
-github.com/gobuffalo/buffalo v0.18.6/go.mod h1:ik4LJwMXlEmxE3yKeuF1wszLXPl01xCST5cWrRGNtTs=
+github.com/gobuffalo/buffalo v0.18.7 h1:OD1lmie6WxRZYVKRUoDVnoKEGQLy04x1Z9k+dsRdP7w=
+github.com/gobuffalo/buffalo v0.18.7/go.mod h1:ik4LJwMXlEmxE3yKeuF1wszLXPl01xCST5cWrRGNtTs=
 github.com/gobuffalo/envy v1.10.1 h1:ppDLoXv2feQ5nus4IcgtyMdHQkKng2lhJCIm33cblM0=
 github.com/gobuffalo/envy v1.10.1/go.mod h1:AWx4++KnNOW3JOeEvhSaq+mvgAvnMYOY1XSIin4Mago=
 github.com/gobuffalo/events v1.4.2 h1:9X4nBKGXOU/N/3AFRO0SxYvpL88lws8M7f5FODbWCm4=
