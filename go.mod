@@ -14,6 +14,6 @@ require (
 	github.com/gofrs/uuid v4.2.0+incompatible
 	github.com/sirupsen/logrus v1.8.1
 	github.com/spf13/cobra v1.4.0
-	github.com/stretchr/testify v1.7.1
+	github.com/stretchr/testify v1.7.2
 	golang.org/x/mod v0.5.0 // indirect
 )
