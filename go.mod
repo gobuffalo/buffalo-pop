@@ -12,7 +12,7 @@ require (
 	github.com/gobuffalo/plush/v4 v4.1.14
 	github.com/gobuffalo/pop/v6 v6.0.6
 	github.com/gofrs/uuid v4.2.0+incompatible
-	github.com/sirupsen/logrus v1.8.1
+	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/cobra v1.5.0
 	github.com/stretchr/testify v1.8.0
 )
