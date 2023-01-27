@@ -21,13 +21,21 @@ type widget struct {
 	UpdatedAt time.Time `db:"updated_at"`
 }
 
+const mig = `CREATE TABLE "widgets" (
+	"created_at" DATETIME NOT NULL,
+	"updated_at" DATETIME NOT NULL,
+	"id" TEXT PRIMARY KEY
+  );`
+
 func tx(fn func(tx *pop.Connection)) error {
 	pop.Debug = true
 	defer func() { pop.Debug = false }()
+
 	d, err := ioutil.TempDir("", "")
 	if err != nil {
 		return err
 	}
+
 	path := filepath.Join(d, "pt_test.sqlite")
 	defer os.RemoveAll(path)
 
@@ -38,6 +46,7 @@ func tx(fn func(tx *pop.Connection)) error {
 	if err != nil {
 		return err
 	}
+
 	if err := db.Dialect.CreateDB(); err != nil {
 		return err
 	}
@@ -47,81 +56,101 @@ func tx(fn func(tx *pop.Connection)) error {
 	if err := db.RawQuery(mig).Exec(); err != nil {
 		return err
 	}
+
 	fn(db)
+
 	return nil
 }
 
 func app(db *pop.Connection) *buffalo.App {
 	app := buffalo.New(buffalo.Options{})
 	app.Use(Transaction(db))
-	app.GET("/success", func(c buffalo.Context) error {
+
+	// all handlers do the same database job but the return differently
+	app.GET("/success-201", func(c buffalo.Context) error {
 		w := &widget{}
 		tx := c.Value("tx").(*pop.Connection)
 		if err := tx.Create(w); err != nil {
 			return err
 		}
-		return c.Render(201, nil)
+		return c.Render(201, nil) // 201 created
 	})
-	app.GET("/non-success", func(c buffalo.Context) error {
+
+	app.GET("/success-301", func(c buffalo.Context) error {
 		w := &widget{}
 		tx := c.Value("tx").(*pop.Connection)
 		if err := tx.Create(w); err != nil {
 			return err
 		}
-		return c.Render(301, nil)
+		return c.Render(301, nil) // 301 moved permanently
 	})
+
+	app.GET("/success-nil", func(c buffalo.Context) error {
+		w := &widget{}
+		tx := c.Value("tx").(*pop.Connection)
+		if err := tx.Create(w); err != nil {
+			return err
+		}
+		return nil // will become 200 ok
+	})
+
+	app.GET("/error-409", func(c buffalo.Context) error {
+		w := &widget{}
+		tx := c.Value("tx").(*pop.Connection)
+		if err := tx.Create(w); err != nil {
+			return err
+		}
+		return c.Render(409, nil) // 409 conflict
+	})
+
+	app.GET("/error-500", func(c buffalo.Context) error {
+		w := &widget{}
+		tx := c.Value("tx").(*pop.Connection)
+		if err := tx.Create(w); err != nil {
+			return err
+		}
+		return c.Render(500, nil) // 500 internal server error
+	})
+
 	app.GET("/error", func(c buffalo.Context) error {
 		w := &widget{}
 		tx := c.Value("tx").(*pop.Connection)
 		if err := tx.Create(w); err != nil {
 			return err
 		}
-		return fmt.Errorf("boom")
+		return fmt.Errorf("boom") // will become 500
 	})
+
 	return app
 }
 
-func Test_PopTransaction(t *testing.T) {
-	r := require.New(t)
-	err := tx(func(db *pop.Connection) {
-		w := httptest.New(app(db))
-		res := w.HTML("/success").Get()
-		r.Equal(201, res.Code)
-		count, err := db.Count("widgets")
-		r.NoError(err)
-		r.Equal(1, count)
-	})
-	r.NoError(err)
-}
+func Test_PopTransaction_Success(t *testing.T) {
+	tests := []struct {
+		path          string
+		status        int
+		success       bool
+		expectedCount int
+	}{
+		{"success-201", 201, true, 1},
+		{"success-301", 301, true, 1},
+		{"success-nil", 200, true, 1},
+		{"error-409", 409, true, 0},
+		{"error-500", 500, true, 0},
+		{"error", 500, true, 0},
+	}
+	for _, tc := range tests {
+		t.Run(tc.path, func(t *testing.T) {
+			r := require.New(t)
+			err := tx(func(db *pop.Connection) {
+				w := httptest.New(app(db))
+				res := w.HTML("/" + tc.path).Get()
+				r.Equal(tc.status, res.Code)
 
-func Test_PopTransaction_Error(t *testing.T) {
-	r := require.New(t)
-	err := tx(func(db *pop.Connection) {
-		w := httptest.New(app(db))
-		res := w.HTML("/error").Get()
-		r.Equal(500, res.Code)
-		count, err := db.Count("widgets")
-		r.NoError(err)
-		r.Equal(0, count)
-	})
-	r.NoError(err)
+				count, err := db.Count("widgets")
+				r.NoError(err)
+				r.Equal(tc.expectedCount, count)
+			})
+			r.NoError(err)
+		})
+	}
 }
-
-func Test_PopTransaction_NonSuccess(t *testing.T) {
-	r := require.New(t)
-	err := tx(func(db *pop.Connection) {
-		w := httptest.New(app(db))
-		res := w.HTML("/non-success").Get()
-		r.Equal(301, res.Code)
-		count, err := db.Count("widgets")
-		r.NoError(err)
-		r.Equal(1, count)
-	})
-	r.NoError(err)
-}
-
-const mig = `CREATE TABLE "widgets" (
-  "created_at" DATETIME NOT NULL,
-  "updated_at" DATETIME NOT NULL,
-  "id" TEXT PRIMARY KEY
-);`
